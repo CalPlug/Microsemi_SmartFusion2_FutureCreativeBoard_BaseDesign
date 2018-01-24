@@ -5471,3 +5471,151 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-23 16:18:16.702 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86 -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-23 16:18:42.006
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-23 16:18:42.025
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\REN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 4 568 2018-01-23 16:19:02.927
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1745)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1828)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1144)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-01-23 16:19:04.146
+!MESSAGE Indexed 'FCBBaseDesign' (13 sources, 74 headers) in 1.35 sec: 5,347 declarations; 16,380 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2018-01-23 16:22:59.248
+!MESSAGE /openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2018-01-23 16:22:59.333
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@fe9bb4): Status ERROR: ilg.gnuarmeclipse.debug.gdbjtag code=-1 Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed. org.eclipse.core.runtime.CoreException: Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.' resulted in an error.
+!SUBENTRY 1 ilg.gnuarmeclipse.debug.gdbjtag 4 -1 2018-01-23 16:22:59.333
+!MESSAGE Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:474)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend.launchGdbServerProcess(GnuArmGdbServerBackend.java:333)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend$GdbServerStep$2.run(GnuArmGdbServerBackend.java:780)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Cannot run program "/openocd.exe": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:471)
+	... 3 more
+!SUBENTRY 2 ilg.gnuarmeclipse.debug.gdbjtag 4 -1 2018-01-23 16:22:59.333
+!MESSAGE Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+!STACK 0
+java.io.IOException: Cannot run program "/openocd.exe": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:471)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend.launchGdbServerProcess(GnuArmGdbServerBackend.java:333)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend$GdbServerStep$2.run(GnuArmGdbServerBackend.java:780)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2018-01-23 16:22:59.348
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:425)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:388)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:313)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.core.runtime.CoreException: Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:474)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend.launchGdbServerProcess(GnuArmGdbServerBackend.java:333)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend$GdbServerStep$2.run(GnuArmGdbServerBackend.java:780)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Cannot run program "/openocd.exe": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:471)
+	... 3 more
+!SUBENTRY 1 ilg.gnuarmeclipse.debug.gdbjtag 4 -1 2018-01-23 16:22:59.348
+!MESSAGE Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:474)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend.launchGdbServerProcess(GnuArmGdbServerBackend.java:333)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend$GdbServerStep$2.run(GnuArmGdbServerBackend.java:780)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Cannot run program "/openocd.exe": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:471)
+	... 3 more
+!SUBENTRY 2 ilg.gnuarmeclipse.debug.gdbjtag 4 -1 2018-01-23 16:22:59.348
+!MESSAGE Launching command [/openocd.exe -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S025 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"] failed.
+!STACK 0
+java.io.IOException: Cannot run program "/openocd.exe": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at ilg.gnuarmeclipse.debug.gdbjtag.DebugUtils.exec(DebugUtils.java:471)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend.launchGdbServerProcess(GnuArmGdbServerBackend.java:333)
+	at ilg.gnuarmeclipse.debug.gdbjtag.dsf.GnuArmGdbServerBackend$GdbServerStep$2.run(GnuArmGdbServerBackend.java:780)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.ide 4 4 2018-01-23 16:23:28.855
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2018-01-23 16:23:28.870
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-01-23 16:23:28.870
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1635)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1716)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1177)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2344)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:509)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
