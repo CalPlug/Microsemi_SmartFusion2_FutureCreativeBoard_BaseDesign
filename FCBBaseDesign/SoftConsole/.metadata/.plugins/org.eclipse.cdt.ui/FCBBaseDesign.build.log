@@ -1,4 +1,4 @@
-10:37:38 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
+11:26:37 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
 make all 
 Building file: ../src/MCP3909.c
 Invoking: Cross ARM C Compiler
@@ -126,5 +126,5 @@ arm-none-eabi-size --format=berkeley "FCBBaseDesign.elf"
 Finished building: FCBBaseDesign.siz
  
 
-10:38:13 Build Finished (took 35s.285ms)
+11:26:44 Build Finished (took 7s.160ms)
 

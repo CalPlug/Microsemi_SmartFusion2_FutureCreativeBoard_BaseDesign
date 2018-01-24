@@ -7,7 +7,7 @@
  */
 
 #include "include.h"
-#include "C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\src\MCP3903.h"
+#include "src\MCP3903.h"
 //***Instance for SPI for ADC on-board Future Creative Board
 spi_instance_t g_core_spi0;
 

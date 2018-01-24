@@ -1,4 +1,4 @@
-10:37:38 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
+11:26:37 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
 make all 
 Building file: ../src/MCP3909.c
 Invoking: Cross ARM C Compiler

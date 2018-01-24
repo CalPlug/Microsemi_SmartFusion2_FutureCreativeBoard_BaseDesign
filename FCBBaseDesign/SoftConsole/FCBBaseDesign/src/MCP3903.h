@@ -19,7 +19,7 @@ University of California, Irvine
 2018
 */
 
-#include "C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\drivers\CoreSPI\core_spi.h"
+#include "..\drivers\CoreSPI\core_spi.h"
 
 //Define "byte"
 typedef unsigned char byte; //define "byte" using char - char is defined as 1 byte
