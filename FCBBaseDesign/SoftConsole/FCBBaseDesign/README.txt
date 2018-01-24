@@ -1,25 +1,38 @@
 ================================================================================
-                    SmartFusion2 CorePWM duty cycle control example
+                    SmartFusion2 CoreGPIO interrupt blink example
 ================================================================================
-This example demonstrates how to control the duty cycle of individual PWM outputs.
-It slowly flashes a single LED.The LED slowly becomes brighter as the PWM duty cycle
-increases and slowly dims as the duty cycle decreases
+This example project demonstrates the use of interrupts that can be generated
+by CoreGPIO ports configured as inputs.
 
 --------------------------------------------------------------------------------
                             How to use this example
 --------------------------------------------------------------------------------
 
-This sample project is targeted at a Cortex-M3 design running on the SmartFusion2
-Eval Kit (090) board. The example project is built for a design using a 
-SmartFusion2 MSS APB clock frequency of 25MHz. Trying to execute this example
-project on a different design will result in incorrect time being used by CorePWM.
-The design should have an instance of CorePWM version 4.3.101 located at 
-address 0x50001000.
-
-Make sure to set up following hardware configuration for running the current
-example project:
-   - One hardware instance of CorePWM should be created with 1 PWM Channel.
-   - PWM outputs 1 should be connected to board LEDs via FPGA I/O pins.
+This example project operates as follows:
+  - CoreGPIO Single bit interrupt is enabled and connected to MSS 
+    Fabric interrupt 4. So GPIO 0 and GPIO 1 interrupt service routine is 
+    called with FabricIrq4_IRGHandler.
+  - The program blinks all LEDs when no interrupts occur.
+  - Pressing the SW2 button will cause a rising edge interrupt on GPIO 1. The
+    GPIO 1 interrupt service routine is called as soon as SW2 is pressed and
+    switches on the LED for eight times the usual blinking delay. Leaving SW2
+    pressed has no effect since GPIO 1 is configured as a rising edge
+    interrupt source. This can be verified by the fact that the LED will
+    eventually start blinking again even if SW2 remains pressed.
+  - Presssing the SW1 button will cause a level interrupt on GPIO 0. The
+    GPIO 0 interrupt service routine will be called as soon as SW1 is pressed
+    and switches on the LED for eight times the usual blink delay. Leaving
+    SW1 pressed will cause the GPIO 0 interrupt service routine to be called
+    continuously since GPIO 0 is configured as a level interrupt source. This
+    can be seen by the LED remaining switches on as long as SW1 is pressed.
+--------------------------------------------------------------------------------
+                                Target hardware
+--------------------------------------------------------------------------------
+This example project is targeted at a Cortex-M3 design running on the SmartFusion2
+Eval Kit board(090). The design should have an instance of CoreGPIO version 3.1 located
+at address 0x30000000 with GPIOs 2 to 5 connected to LEDs and GPIOs 0 and 1 
+connected to switches SW1 and SW2 respectively.The example project is built for a
+design using a SmartFusion2 MSS APB clock frequency of 71MHz.
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                           Silicon revision dependencies

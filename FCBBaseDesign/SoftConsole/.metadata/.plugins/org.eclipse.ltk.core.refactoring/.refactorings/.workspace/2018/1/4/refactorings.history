@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <session version="1.0">
-<refactoring comment="Rename resource &apos;servoarm&apos; to &apos;FCBBaseDesign&apos;" description="Rename resource &apos;servoarm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/servoarm" name="FCBBaseDesign" stamp="1516753139251" updateReferences="true"/>
+<refactoring comment="Rename resource &apos;digikeyboard&apos; to &apos;FCBBaseDesign&apos;" description="Rename resource &apos;digikeyboard&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/digikeyboard" name="FCBBaseDesign" stamp="1516780954593" updateReferences="true"/>
 </session>

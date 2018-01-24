@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)</text>
-<text>Date: Tue Jan 23 19:35:42 2018
+<text>Date: Tue Jan 23 23:29:53 2018
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\SF2_MSS_sys.edn</cell>
+ <cell>C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\SF2_MSS_sys.edn</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>1749</cell>
+ <cell>1881</cell>
  <cell>27696</cell>
- <cell>6.31</cell>
+ <cell>6.79</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>934</cell>
+ <cell>1063</cell>
  <cell>27696</cell>
- <cell>3.37</cell>
+ <cell>3.84</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -142,9 +142,9 @@
 </row>
 <row>
  <cell>RAM64x18</cell>
- <cell>3</cell>
+ <cell>5</cell>
  <cell>34</cell>
- <cell>8.82</cell>
+ <cell>14.71</cell>
 </row>
 <row>
  <cell>RAM1K18</cell>
@@ -204,13 +204,13 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>1641</cell>
- <cell>826</cell>
+ <cell>1701</cell>
+ <cell>883</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
- <cell>108</cell>
- <cell>108</cell>
+ <cell>180</cell>
+ <cell>180</cell>
 </row>
 <row>
  <cell>RAM1K18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>1749</cell>
- <cell>934</cell>
+ <cell>1881</cell>
+ <cell>1063</cell>
 </row>
 </table>
 <section><name>MSS Resource Usage</name></section>
@@ -313,7 +313,7 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>59</cell>
+ <cell>60</cell>
 </row>
 <row>
  <cell>5</cell>
@@ -345,7 +345,7 @@
 </row>
 <row>
  <cell>Total</cell>
- <cell>104</cell>
+ <cell>105</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -445,7 +445,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>816</cell>
+ <cell>857</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/MSS_READY</cell>
 </row>
@@ -460,7 +460,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>789</cell>
+ <cell>850</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/FAB_CCC_GL0</cell>
 </row>
@@ -506,7 +506,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>227</cell>
+ <cell>216</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
 </row>
@@ -516,7 +516,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>137</cell>
+ <cell>138</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
 </row>
@@ -526,7 +526,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>84</cell>
+ <cell>83</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]</cell>
 </row>
@@ -536,7 +536,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>69</cell>
+ <cell>68</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[6]</cell>
 </row>
@@ -546,7 +546,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>64</cell>
+ <cell>59</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[5]</cell>
 </row>
@@ -614,7 +614,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>227</cell>
+ <cell>216</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
 </row>
@@ -624,7 +624,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>137</cell>
+ <cell>138</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
 </row>
@@ -634,7 +634,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>84</cell>
+ <cell>83</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]</cell>
 </row>
@@ -644,7 +644,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>69</cell>
+ <cell>68</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[6]</cell>
 </row>
@@ -654,7 +654,7 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>64</cell>
+ <cell>59</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[5]</cell>
 </row>

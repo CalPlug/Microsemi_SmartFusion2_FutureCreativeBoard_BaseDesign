@@ -17,6 +17,7 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+src \
 . \
 hal/CortexM3 \
 hal/CortexM3/GNU \
@@ -27,7 +28,9 @@ drivers/mss_rtc \
 drivers/mss_nvm \
 drivers/mss_hpdma \
 drivers/CoreUARTapb \
+drivers/CoreSPI \
 drivers/CorePWM \
+drivers/CoreI2C \
 drivers/CoreGPIO \
 CMSIS \
 CMSIS/startup_gcc \

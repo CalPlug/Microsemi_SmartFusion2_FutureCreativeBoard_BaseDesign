@@ -41,38 +41,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-servoarm.hex \
+digikeyboard.hex \
 
 SECONDARY_SIZE += \
-servoarm.siz \
+digikeyboard.siz \
 
 
 # All Target
-all: servoarm.elf secondary-outputs
+all: digikeyboard.elf secondary-outputs
 
 # Tool invocations
-servoarm.elf: $(OBJS) $(USER_OBJS)
+digikeyboard.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../CMSIS/startup_gcc/production-smartfusion2-execute-in-place.ld -Xlinker --gc-sections -Wl,-Map,"servoarm.map" -o "servoarm.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\SoftConsole\digikeyboard\CMSIS\startup_gcc\production-smartfusion2-execute-in-place.ld" -Xlinker --gc-sections -Wl,-Map,"digikeyboard.map" -o "digikeyboard.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-servoarm.hex: servoarm.elf
+digikeyboard.hex: digikeyboard.elf
 	@echo 'Invoking: Cross ARM GNU Create Flash Image'
-	arm-none-eabi-objcopy -O ihex "servoarm.elf"  "servoarm.hex"
+	arm-none-eabi-objcopy -O ihex "digikeyboard.elf"  "digikeyboard.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-servoarm.siz: servoarm.elf
+digikeyboard.siz: digikeyboard.elf
 	@echo 'Invoking: Cross ARM GNU Print Size'
-	arm-none-eabi-size --format=berkeley "servoarm.elf"
+	arm-none-eabi-size --format=berkeley "digikeyboard.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS) servoarm.elf
+	-$(RM) $(OBJS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS) digikeyboard.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)

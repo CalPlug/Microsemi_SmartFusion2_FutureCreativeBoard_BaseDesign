@@ -1,4 +1,3 @@
-activeuserprofiles=CalPlug-HP;Team
+activeuserprofiles=MikesDesktop-PC;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=CalPlug
-useridperkey=CalPlug-HP.Local\=CalPlug;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=Mike Klopfer

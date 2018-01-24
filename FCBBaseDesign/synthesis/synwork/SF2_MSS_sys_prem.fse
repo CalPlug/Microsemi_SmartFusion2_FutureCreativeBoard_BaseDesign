@@ -73,19 +73,21 @@ fsm_registers {4637183719} {mtx_state[0]}  {mtx_state[1]}  {mtx_state[2]}  {mtx_
 
 fsm_encoding {32134413410} onehot
 
-fsm_state_encoding {32134413410} 00000000000000000000000000000000 {000001}
+fsm_state_encoding {32134413410} 00000000000000000000000000000000 {0000001}
 
-fsm_state_encoding {32134413410} 00000000000000000000000000000001 {000010}
+fsm_state_encoding {32134413410} 00000000000000000000000000000001 {0000010}
 
-fsm_state_encoding {32134413410} 00000000000000000000000000000010 {000100}
+fsm_state_encoding {32134413410} 00000000000000000000000000000010 {0000100}
 
-fsm_state_encoding {32134413410} 00000000000000000000000000000011 {001000}
+fsm_state_encoding {32134413410} 00000000000000000000000000000011 {0001000}
 
-fsm_state_encoding {32134413410} 00000000000000000000000000000100 {010000}
+fsm_state_encoding {32134413410} 00000000000000000000000000000100 {0010000}
 
-fsm_state_encoding {32134413410} 00000000000000000000000000000101 {100000}
+fsm_state_encoding {32134413410} 00000000000000000000000000000101 {0100000}
 
-fsm_registers {32134413410} {xmit_state[0]}  {xmit_state[1]}  {xmit_state[2]}  {xmit_state[3]}  {xmit_state[4]}  {xmit_state[5]} 
+fsm_state_encoding {32134413410} 00000000000000000000000000000110 {1000000}
+
+fsm_registers {32134413410} {xmit_state[0]}  {xmit_state[1]}  {xmit_state[2]}  {xmit_state[3]}  {xmit_state[4]}  {xmit_state[5]}  {xmit_state[6]} 
 
 fsm_encoding {31264626411} sequential
 
@@ -98,3 +100,15 @@ fsm_state_encoding {31264626411} rx_stop_bit {10}
 fsm_state_encoding {31264626411} rx_wait_state {11}
 
 fsm_registers {31264626411} {rx_state[1]}  {rx_state[0]} 
+
+fsm_encoding {50367636712} sequential
+
+fsm_state_encoding {50367636712} s0 {00}
+
+fsm_state_encoding {50367636712} s1 {01}
+
+fsm_state_encoding {50367636712} s2 {10}
+
+fsm_state_encoding {50367636712} s3 {11}
+
+fsm_registers {50367636712} {rx_state[1]}  {rx_state[0]} 

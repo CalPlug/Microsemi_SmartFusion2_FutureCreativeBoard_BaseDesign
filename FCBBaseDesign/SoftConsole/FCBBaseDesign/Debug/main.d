@@ -6,8 +6,9 @@ main.o: ../main.c ../platform.h ../drivers/CorePWM/core_pwm.h \
  C:/Microsemi/SoftConsole_v5.1/CMSIS/V4.5/Include/cmsis_gcc.h \
  C:/Microsemi/SoftConsole_v5.1/CMSIS/V4.5/Include/core_cmFunc.h \
  ../CMSIS/system_m2sxxx.h ../hal/hal.h ../hal/hw_reg_access.h \
- ../drivers/CoreUARTapb/core_uart_apb.h ../drivers/CoreGPIO/core_gpio.h \
- ../CMSIS/m2sxxx.h
+ ../drivers/CoreUARTapb/core_uart_apb.h ../drivers/CoreSPI/core_spi.h \
+ ../drivers/CoreI2C/core_i2c.h ../drivers/CoreGPIO/core_gpio.h \
+ ../CMSIS/m2sxxx.h ../src/MCP3903.h ../drivers/CoreSPI/core_spi.h
 
 ../platform.h:
 
@@ -35,6 +36,14 @@ C:/Microsemi/SoftConsole_v5.1/CMSIS/V4.5/Include/core_cmFunc.h:
 
 ../drivers/CoreUARTapb/core_uart_apb.h:
 
+../drivers/CoreSPI/core_spi.h:
+
+../drivers/CoreI2C/core_i2c.h:
+
 ../drivers/CoreGPIO/core_gpio.h:
 
 ../CMSIS/m2sxxx.h:
+
+../src/MCP3903.h:
+
+../drivers/CoreSPI/core_spi.h:

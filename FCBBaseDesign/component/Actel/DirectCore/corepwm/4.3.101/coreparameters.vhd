@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Tue Jan 23 19:32:54 2018
+-- Created by Microsemi SmartDesign Tue Jan 23 22:30:19 2018
 -- Parameters for corepwm
 ----------------------------------------------------------------------
 

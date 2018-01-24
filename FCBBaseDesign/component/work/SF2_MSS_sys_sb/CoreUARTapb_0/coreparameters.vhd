@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Tue Jan 23 19:32:55 2018
+-- Created by Microsemi SmartDesign Tue Jan 23 22:30:23 2018
 -- Parameters for CoreUARTapb
 ----------------------------------------------------------------------
 
@@ -18,9 +18,9 @@ package coreparameters is
     constant HDL_license : string( 1 to 1 ) := "U";
     constant PRG_BIT8 : integer := 0;
     constant PRG_PARITY : integer := 0;
-    constant RX_FIFO : integer := 0;
+    constant RX_FIFO : integer := 1;
     constant RX_LEGACY_MODE : integer := 0;
     constant testbench : string( 1 to 4 ) := "User";
-    constant TX_FIFO : integer := 0;
-    constant USE_SOFT_FIFO : integer := 0;
+    constant TX_FIFO : integer := 1;
+    constant USE_SOFT_FIFO : integer := 1;
 end coreparameters;

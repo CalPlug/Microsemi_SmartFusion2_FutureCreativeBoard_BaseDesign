@@ -24,7 +24,7 @@ C_DEPS += \
 CMSIS/startup_gcc/%.o: ../CMSIS/startup_gcc/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DNDEBUG -I../drivers/CorePWM -I../hal/CortexM3 -I../CMSIS -I../hal -I../hal/CortexM3/GNU -I../drivers_config/sys_config -I.. -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DNDEBUG -I../drivers/CoreGPIO -I../hal/CortexM3 -I../CMSIS -I../hal -I../hal/CortexM3/GNU -I../drivers_config/sys_config -I.. -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

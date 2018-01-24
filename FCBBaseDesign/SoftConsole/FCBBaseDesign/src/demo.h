@@ -11,6 +11,6 @@
 #include "drivers/CoreSPI/core_spi.h"
 #include "drivers/CoreI2C/core_i2c.h"
 
-uint8_t getByte( spi_instance_t * this_spi, uint8_t out);
+unsigned int getByte( spi_instance_t * this_spi, uint8_t out);
 
 #endif /* SRC_DEMO_H_ */
