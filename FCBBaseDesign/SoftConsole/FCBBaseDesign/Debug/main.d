@@ -7,9 +7,10 @@ main.o: ../main.c ../include.h ../platform.h \
  C:/Microsemi/SoftConsole_v5.1/CMSIS/V4.5/Include/cmsis_gcc.h \
  C:/Microsemi/SoftConsole_v5.1/CMSIS/V4.5/Include/core_cmFunc.h \
  ../CMSIS/system_m2sxxx.h ../hal/hal.h ../hal/hw_reg_access.h \
- ../drivers/CoreUARTapb/core_uart_apb.h ../drivers/CoreSPI/core_spi.h \
- ../drivers/CoreI2C/core_i2c.h ../drivers/CoreGPIO/core_gpio.h \
- ../CMSIS/m2sxxx.h ../src/MCP3903.h ../drivers/CoreSPI/core_spi.h
+ ../drivers/CoreUARTapb/core_uart_apb.h ../drivers/CoreI2C/core_i2c.h \
+ ../drivers/CoreGPIO/core_gpio.h ../CMSIS/m2sxxx.h \
+ C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\src\MCP3903.h \
+ C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\drivers\CoreSPI\core_spi.h
 
 ../include.h:
 
@@ -39,14 +40,12 @@ C:/Microsemi/SoftConsole_v5.1/CMSIS/V4.5/Include/core_cmFunc.h:
 
 ../drivers/CoreUARTapb/core_uart_apb.h:
 
-../drivers/CoreSPI/core_spi.h:
-
 ../drivers/CoreI2C/core_i2c.h:
 
 ../drivers/CoreGPIO/core_gpio.h:
 
 ../CMSIS/m2sxxx.h:
 
-../src/MCP3903.h:
+C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\src\MCP3903.h:
 
-../drivers/CoreSPI/core_spi.h:
+C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\drivers\CoreSPI\core_spi.h:

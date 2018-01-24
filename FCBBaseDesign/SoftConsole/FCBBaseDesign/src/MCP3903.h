@@ -1,7 +1,12 @@
+/*
+ * MCP3903.h
+ *
+ *  Created on: Jan 24, 2018
+ *      Author: REN
+ */
+
 #ifndef SRC_MCP3903_H_
 #define SRC_MCP3903_H_
-
-#include "drivers/CoreSPI/core_spi.h"
 
 /*
  Extended from the Arduino Library for MCP3903 A/D Converter
@@ -14,19 +19,21 @@ University of California, Irvine
 2018
 */
 
+#include "C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\drivers\CoreSPI\core_spi.h"
+
 //Define "byte"
 typedef unsigned char byte; //define "byte" using char - char is defined as 1 byte
-typedef __uint32_t uint32_t ; //Define uint32_t
+//typedef __uint32_t uint32_t ; //Define uint32_t
 
 // Function Routines
-	void MCP3903Reset24();
-	void MCP3903ResetOSR(byte osr);
-	unsigned long MCP3903ReadRegister(byte reg);
-	void MCP3903WriteRegister(byte reg, unsigned long data);
-	unsigned long readControlRegister();
-	unsigned long readStatusCommRegister();
-	double MCP3903ReadADC(byte channel);
-	void MCP3903SetGain(byte channel, byte gain);
-	void MCP3903SetGainCB(byte channel, byte gain, byte boost);
+	void MCP3903Reset24(spi_instance_t * this_spi);
+	void MCP3903ResetOSR(byte osr, spi_instance_t * this_spi);
+	unsigned long MCP3903ReadRegister(byte reg, spi_instance_t * this_spi);
+	void MCP3903WriteRegister(byte reg, unsigned long data, spi_instance_t * this_spi);
+	unsigned long readControlRegister(spi_instance_t * this_spi);
+	unsigned long readStatusCommRegister(spi_instance_t * this_spi);
+	double MCP3903ReadADC(byte channel, spi_instance_t * this_spi);
+	void MCP3903SetGain(byte channel, byte gain, spi_instance_t * this_spi);
+	void MCP3903SetGainCB(byte channel, byte gain, byte boost, spi_instance_t * this_spi);
 
-#endif /*SRC_MCP3903_H_*/
+#endif /* SRC_MCP3903_H_ */

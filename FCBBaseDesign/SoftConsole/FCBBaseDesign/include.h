@@ -14,12 +14,11 @@
 #include "CMSIS/system_m2sxxx.h"
 #include "hal.h"
 #include "drivers/CoreUARTapb/core_uart_apb.h"
-#include "drivers/CoreSPI/core_spi.h"
 #include "drivers/CoreI2C/core_i2c.h"
 #include "drivers/CoreGPIO/core_gpio.h"
 #include "m2sxxx.h"
 #include <stdio.h>  //used for ARM Semihosting (Console Debug)
-#include "src/MCP3903.h" //Used for ADC on-board Future Creative Board
+//#include "C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\src\MCP3903.h" //Used for ADC on-board Future Creative Board
 
 //MCP3903 Registers
 	#define REG_GAIN 0x08

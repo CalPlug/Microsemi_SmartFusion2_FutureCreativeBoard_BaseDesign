@@ -7,7 +7,7 @@
  */
 
 #include "include.h"
-
+#include "C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\FCBBaseDesign\src\MCP3903.h"
 //***Instance for SPI for ADC on-board Future Creative Board
 spi_instance_t g_core_spi0;
 
@@ -46,6 +46,13 @@ gpio_instance_t g_gpio;
 UART_instance_t g_uart;
 uint32_t duty_cycle = 1;  //Set PWM initial duty cycle
 #define COREUARTAPB0_BASE_ADDR	0x50002000
+
+
+/******************************************************************************
+ * CoreSPI instance data.
+ *****************************************************************************/
+#define CORE_SPI0_BASE_ADDRESS	0x50004000
+
 
 /******************************************************************************
  * TX Send message (heartbeat)
@@ -138,8 +145,10 @@ int main( void )
 * Initialize communication components of application
 *************************************************************************/
         //Initialize MCP3903
-	    	MCP3903ResetOSR(OSR_256);   //Send with OSR256 constant (value of 0x3, see library)
-	        MCP3903SetGain(1,GAIN_8);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
+	    	SPI_init(&g_core_spi0, CORE_SPI0_BASE_ADDRESS,8);//for LCD
+	    	SPI_configure_master_mode(&g_core_spi0);
+	    	MCP3903ResetOSR(OSR_256, &g_core_spi0);   //Send with OSR256 constant (value of 0x3, see library)
+	        MCP3903SetGain(1,GAIN_8, &g_core_spi0);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
 
 		//Initialize UART RX buffer
 		uint8_t rx_data[MAX_RX_DATA_SIZE]={0}; //initialize buffer as all 0's
@@ -256,7 +265,7 @@ void Timer1_IRQHandler(void)
     //UART_send( &g_uart, g_message, sizeof(g_message) ); //Periodically send out heartbeat signal
 	#ifdef VERBOSEDEBUGCONSOLE
      initialise_monitor_handles();
-     iprintf("ADC Value for Ch 1: %8.3f", (MCP3903ReadADC(1) * 2.36));  //Periodically read out ADC value using MSS timer
+     iprintf("ADC Value for Ch 1: %8.3f", (MCP3903ReadADC(1, &g_core_spi0) * 2.36));  //Periodically read out ADC value using MSS timer
 	#endif
     /* Clear TIM1 interrupt */
     MSS_TIM1_clear_irq();
