@@ -11,7 +11,7 @@ University of California, Irvine
  */
 
 #include "MCP3903.h"
-spi_instance_t g_core_spi0; //Core SPI 0 Instance to interface with the MCP3903 ADC
+//spi_instance_t g_core_spi0; //Core SPI 0 Instance to interface with the MCP3903 ADC
 
 //**** Pin Assignments
 //historic Arduino Pins, now unused

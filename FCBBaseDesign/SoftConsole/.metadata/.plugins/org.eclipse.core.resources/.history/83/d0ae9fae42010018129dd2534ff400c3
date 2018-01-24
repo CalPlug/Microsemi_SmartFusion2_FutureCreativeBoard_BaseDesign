@@ -21,10 +21,9 @@ University of California, Irvine
 
 #include "..\drivers\CoreSPI\core_spi.h"
 
-//Define non-standard C variable types for this scope
+//Define "byte"
 typedef unsigned char byte; //define "byte" using char - char is defined as 1 byte
-typedef __uint32_t uint32_t ; //Define uint32_t for this scope
-typedef __uint8_t uint8_t ; //Define uint8_t for this scope
+//typedef __uint32_t uint32_t ; //Define uint32_t
 
 // Function Routines
 	void MCP3903Reset24(spi_instance_t * this_spi);
