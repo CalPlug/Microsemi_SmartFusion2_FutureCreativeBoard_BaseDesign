@@ -3,10 +3,17 @@
 <drcreport>
   <header>SF2_MSS_sys_sb</header>
   <drc>
-    <status>D:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin CORESPI_0:APB_bif</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/SF2_MSS_sys_sb/pins/CORESPI_0:APB_bif</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
     <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin MSS_INT_F2M</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/SF2_MSS_sys_sb/pins/SF2_MSS_sys_sb_MSS_0:MSS_INT_F2M</crossprobe>
+    <message>Out-of-date Instance</message>
+    <detail>Component definition is not consistent for instance SF2_MSS_sys_sb_MSS_0</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/SF2_MSS_sys_sb/instances/SF2_MSS_sys_sb_MSS_0</crossprobe>
   </drc>
 </drcreport>

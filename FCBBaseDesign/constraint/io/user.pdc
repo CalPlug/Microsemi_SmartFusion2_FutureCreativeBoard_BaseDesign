@@ -151,8 +151,53 @@ set_io TX              \
     -DIRECTION OUTPUT
 
 
+set_io SCL[0]              \
+    -pinname T7        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION INOUT
 
-# 
+
+set_io SDA[0]              \
+    -pinname R6        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION INOUT
+
+
+set_io SPISDI              \
+    -pinname T13        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION INPUT
+
+
+set_io SPISDO              \
+    -pinname R13        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION OUTPUT
+
+set_io SPISCLK              \
+    -pinname R12        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION OUTPUT
+
+
+set_io SPISS              \
+    -pinname T12        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION OUTPUT
+
+
 # Dedicated Peripheral I/O Settings
 # 
 
