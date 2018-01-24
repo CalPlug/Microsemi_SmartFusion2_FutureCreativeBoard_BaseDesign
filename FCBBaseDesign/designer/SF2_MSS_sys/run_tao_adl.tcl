@@ -1,6 +1,6 @@
 set_family {SmartFusion2}
-read_adl {C:\Users\calplug\Desktop\Servo-arm2\designer\SF2_MSS_sys\SF2_MSS_sys.adl}
+read_adl {C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys.adl}
 map_netlist
-read_sdc {C:\Users\calplug\Desktop\Servo-arm2\constraint\SF2_MSS_sys_derived_constraints.sdc}
-check_constraints {C:\Users\calplug\Desktop\Servo-arm2\constraint\placer_sdc_errors.log}
-write_sdc -strict {C:\Users\calplug\Desktop\Servo-arm2\designer\SF2_MSS_sys\place_route.sdc}
+read_sdc {C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\constraint\SF2_MSS_sys_derived_constraints.sdc}
+check_constraints {C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\constraint\placer_sdc_errors.log}
+write_sdc -strict {C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\place_route.sdc}

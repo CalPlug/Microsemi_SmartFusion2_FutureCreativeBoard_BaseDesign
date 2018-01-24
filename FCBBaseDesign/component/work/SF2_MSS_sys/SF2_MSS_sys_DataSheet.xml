@@ -11,9 +11,9 @@
     <hdl-type>VHDL</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/Mike Klopfer/Desktop/PWM_8ch_16b_Creative/component/work/SF2_MSS_sys</location>
-    <state>GENERATED ( Sat Mar 04 15:33:01 2017 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\Mike Klopfer\Desktop\PWM_8ch_16b_Creative\SoftConsole</swide-toolchain>
+    <location>C:/Users/REN/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/component/work/SF2_MSS_sys</location>
+    <state>GENERATED ( Tue Jan 23 17:25:46 2018 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
@@ -90,8 +90,8 @@
           <fullPinName>
           </fullPinName>
           <remapAddress>0x60000000</remapAddress>
-          <fullAddressSpace>0x60000000 - 0x6000287F</fullAddressSpace>
-          <range>0x2880</range>
+          <fullAddressSpace>0x60000000 - 0x60004A7F</fullAddressSpace>
+          <range>0x4A80</range>
         </slave>
         <slave>
           <name>corepwm_0_0</name>
@@ -582,6 +582,326 @@
           <combinedAddressSpace>0x50002000 - 0x50002FFF</combinedAddressSpace>
           <remapAddress>0x30002000</remapAddress>
           <combinedAddressSpace>0x30002000 - 0x30002FFF</combinedAddressSpace>
+          <range>0x00001000</range>
+        </slave>
+        <slave>
+          <name>COREI2C_0</name>
+          <fullPinName>COREI2C_0:APBslave</fullPinName>
+          <remapAddress>0x50003000</remapAddress>
+          <combinedAddressSpace>0x50003000 - 0x50003FFF</combinedAddressSpace>
+          <remapAddress>0x30003000</remapAddress>
+          <combinedAddressSpace>0x30003000 - 0x30003FFF</combinedAddressSpace>
+          <range>0x00001000</range>
+          <memoryMap>
+            <name>RegisterMap</name>
+            <addressBlock>
+              <baseAddress>0x0</baseAddress>
+              <range format="long">0x80</range>
+              <width format="long" id="width">8</width>
+              <register>
+                <name>CTRL</name>
+                <addressOffset>0x00</addressOffset>
+                <absoluteAddress>0x50003000</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x00</resetValue>
+                <field>
+                  <name>cr2</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>ens1</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sta</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sto</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>si</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>aa</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>cr1</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>cr0</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+              </register>
+              <register>
+                <name>STAT</name>
+                <addressOffset>0x04</addressOffset>
+                <absoluteAddress>0x50003004</absoluteAddress>
+                <size>8</size>
+                <access>R</access>
+                <resetValue>0xF8</resetValue>
+                <field>
+                  <name>status</name>
+                  <bitNumber>7:0</bitNumber>
+                  <access>R</access>
+                  <description>Refer to Handbook</description>
+                </field>
+              </register>
+              <register>
+                <name>DATA</name>
+                <addressOffset>0x08</addressOffset>
+                <absoluteAddress>0x50003008</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x00</resetValue>
+                <field>
+                  <name>sd7</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd6</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd5</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd4</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd3</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd2</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd1</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>sd0</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+              </register>
+              <register>
+                <name>ADDR0</name>
+                <addressOffset>0x0C</addressOffset>
+                <absoluteAddress>0x5000300C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x00</resetValue>
+                <field>
+                  <name>adr6</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr5</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr4</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr3</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr2</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr1</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr0</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>gc</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+              </register>
+              <register>
+                <name>SMB</name>
+                <addressOffset>0x10</addressOffset>
+                <absoluteAddress>0x50003010</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x78</resetValue>
+                <field>
+                  <name>SMBus_Reset</name>
+                  <bitNumber>7</bitNumber>
+                  <access>W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMBSUS_NO</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMBSUS_NI</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMBALERT_NO</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMBALERT_NI</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMB_IPMI_EN</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMBSUS_IE</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>SMBALERT_IE</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+              </register>
+              <register>
+                <name>ADDR1</name>
+                <addressOffset>0x1C</addressOffset>
+                <absoluteAddress>0x5000301C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x00</resetValue>
+                <field>
+                  <name>adr6</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr5</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr4</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr3</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr2</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr1</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>adr0</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+                <field>
+                  <name>GC_or_EnAdr</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>Refer to Handbook</description>
+                </field>
+              </register>
+            </addressBlock>
+          </memoryMap>
+        </slave>
+        <slave>
+          <name>CORESPI_0</name>
+          <fullPinName>CORESPI_0:APB_bif</fullPinName>
+          <remapAddress>0x50004000</remapAddress>
+          <combinedAddressSpace>0x50004000 - 0x50004FFF</combinedAddressSpace>
+          <remapAddress>0x30004000</remapAddress>
+          <combinedAddressSpace>0x30004000 - 0x30004FFF</combinedAddressSpace>
           <range>0x00001000</range>
         </slave>
         <slave>

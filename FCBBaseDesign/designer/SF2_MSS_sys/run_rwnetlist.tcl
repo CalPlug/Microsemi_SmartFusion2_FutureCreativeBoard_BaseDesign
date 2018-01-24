@@ -1,4 +1,4 @@
 set_device -fam SmartFusion2
 read_edif  \
-    -file {C:\Users\calplug\Desktop\Servo-arm2\synthesis\SF2_MSS_sys.edn}
-write_adl -file {C:\Users\calplug\Desktop\Servo-arm2\designer\SF2_MSS_sys\SF2_MSS_sys.adl}
+    -file {C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\SF2_MSS_sys.edn}
+write_adl -file {C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys.adl}
