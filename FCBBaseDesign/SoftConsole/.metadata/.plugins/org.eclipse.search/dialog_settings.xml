@@ -19,7 +19,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDem" key="textPattern"/>
+			<item value="C:\\Users\\CalPlug\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDem" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
