@@ -827,7 +827,7 @@ SIZE="2763"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys\SF2_MSS_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1516770382"
+TIME="1516815118"
 SIZE="7122"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd,hdl"
@@ -1299,22 +1299,22 @@ SIZE="6454"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys.edn,syn_edn"
 STATE="utd"
-TIME="1516806770"
+TIME="1516810479"
 SIZE="2252246"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys.so,so"
 STATE="utd"
-TIME="1516778980"
+TIME="1516810479"
 SIZE="298"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1516806770"
+TIME="1516810479"
 SIZE="3282"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys_syn.prj,prj"
 STATE="utd"
-TIME="1516778981"
+TIME="1516810480"
 SIZE="11049"
 ENDFILE
 ENDLIST
@@ -1837,8 +1837,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1971,12 +1971,13 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Bitstream:SF2_MSS_sys_generateBitstream.log
+ReportsCurrentItem;Generate Memory Map:SF2_MSS_sys_DataSheet.xml
+Constraint Manager;Constraint Manager;0
+SmartDesign;DESIGN_FIRMWARE;0
 HDL;constraint\io\user.pdc;0
 StartPage;StartPage;0
 SmartDesign;SF2_MSS_sys;0
 SmartDesign;SF2_MSS_sys_sb;0
-Constraint Manager;Constraint Manager;0
 ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList

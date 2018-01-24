@@ -343,7 +343,6 @@ void PWM_set_duty_cycle
   {
     uint32_t period ;
     period = HAL_get_32bit_reg( pwm_inst->address, PERIOD );
-
     HAL_ASSERT( duty_cycle <= period );
   }
 #endif
