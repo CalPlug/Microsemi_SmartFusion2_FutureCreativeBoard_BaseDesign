@@ -13,13 +13,13 @@
  * Peripherals base addresses
  */
 
-#define COREPWM_BASE_ADDR      0x50000000UL
+//#define COREPWM_BASE_ADDR      0x50000000UL  - Defined Already in main.c
 
 /*******************************************************************************
  * Peripherals base addresses
  */
 
-#define COREGPIO_BASE_ADDR         0x30001000UL
+ //#define COREGPIO_BASE_ADDR         0x30001000UL - Defined Already in main.c
 
 
 /*******************************************************************************
@@ -31,6 +31,6 @@
  * Peripherals base addresses
  */
 
-#define COREUARTAPB0_BASE_ADDR        0x50002000UL
+//#define COREUARTAPB0_BASE_ADDR        0x50002000UL  - Defined Already in main.c
 
 #endif /*__PLATFORM_H_*/

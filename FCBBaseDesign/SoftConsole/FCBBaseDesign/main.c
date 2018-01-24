@@ -6,18 +6,7 @@
  * *
  */
 
-#include "platform.h" //there may be double definitions for memory location constants to text in the code, be mindful of this
-#include "drivers/CorePWM/core_pwm.h"
-#include "drivers/mss_timer/mss_timer.h"
-#include "CMSIS/system_m2sxxx.h"
-#include "hal.h"
-#include "drivers/CoreUARTapb/core_uart_apb.h"
-#include "drivers/CoreSPI/core_spi.h"
-#include "drivers/CoreI2C/core_i2c.h"
-#include "drivers/CoreGPIO/core_gpio.h"
-#include "m2sxxx.h"
-#include <stdio.h>  //used for ARM Semihosting (Console Debug)
-#include "src/MCP3903.h" //Used for ADC on-board Future Creative Board
+#include "include.h"
 
 //***Instance for SPI for ADC on-board Future Creative Board
 spi_instance_t g_core_spi0;
@@ -29,6 +18,7 @@ spi_instance_t g_core_spi0;
 #ifdef VERBOSEDEBUGCONSOLE
 	   extern void initialise_monitor_handles(void); //ARM Semihosting enabled
 #endif
+
 /******************************************************************************
  * Sample baud value to achieve UART communication at a 115200 baud rate with a (50MHz Digikeyboard clock source.
  * This value is calculated using the following equation:
@@ -46,6 +36,7 @@ spi_instance_t g_core_spi0;
 /******************************************************************************
  * CoreGPIO instance data.
  *****************************************************************************/
+#define COREGPIO_BASE_ADDR         0x30001000UL
 gpio_instance_t g_gpio;
 
 
@@ -147,8 +138,8 @@ int main( void )
 * Initialize communication components of application
 *************************************************************************/
         //Initialize MCP3903
-	    	MCP3903ResetOSR (0x3);   //Send with OSR256 constant (value of 0x3, see library)
-	        MCP3903SetGain (1,0x3);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
+	    	MCP3903ResetOSR(OSR_256);   //Send with OSR256 constant (value of 0x3, see library)
+	        MCP3903SetGain(1,GAIN_8);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
 
 		//Initialize UART RX buffer
 		uint8_t rx_data[MAX_RX_DATA_SIZE]={0}; //initialize buffer as all 0's

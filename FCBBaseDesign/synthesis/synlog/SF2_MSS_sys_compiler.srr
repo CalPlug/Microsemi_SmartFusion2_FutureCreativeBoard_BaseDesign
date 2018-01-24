@@ -8,10 +8,8 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ps
 @N:"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd":17:7:17:17|Top entity is set to SF2_MSS_sys.
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd changed - recompiling
 File C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\IO_0\SF2_MSS_sys_sb_IO_0_IO.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\IO_1\SF2_MSS_sys_sb_IO_1_IO.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb_MSS\SF2_MSS_sys_sb_MSS_syn.vhd changed - recompiling
@@ -32,7 +30,7 @@ File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativ
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Clock_gen.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Rx_async.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Tx_async.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8_g4.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\coreuart_pkg.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\components.vhd changed - recompiling
@@ -54,43 +52,17 @@ File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativ
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd changed - recompiling
 VHDL syntax check successful!
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\IO_0\SF2_MSS_sys_sb_IO_0_IO.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\IO_1\SF2_MSS_sys_sb_IO_1_IO.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio_pkg.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vhdl\core\corei2creal.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\tach_if.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\t_corepwm_pkg.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\spi_clockmux.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\corespi_pkg.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\spi_control.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\spi_rf.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Clock_gen.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Rx_async.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Tx_async.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8_g4.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\coreuart_pkg.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\components.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\components.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\components.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\COREI2C_0\rtl\vhdl\core\corei2c.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\spi_chanctrl.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\spi_fifo.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\spi.vhd changed - recompiling
-File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vhdl\core\corespi.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUART.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd changed - recompiling
@@ -583,12 +555,12 @@ State machine has 4 reachable states with original encodings of:
 @W: CL246 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd":83:6:83:10|Input port bits 1 to 0 of paddr(4 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd":10:10:10:12|Input XTL is unused.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 112MB peak: 126MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 112MB peak: 126MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Tue Jan 23 23:29:19 2018
+# Wed Jan 24 08:14:18 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -600,7 +572,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Jan 23 23:29:20 2018
+# Wed Jan 24 08:14:18 2018
 
 ###########################################################]
 @END
@@ -610,6 +582,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory
 Process took 0h:00m:05s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Tue Jan 23 23:29:20 2018
+# Wed Jan 24 08:14:18 2018
 
 ###########################################################]

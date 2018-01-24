@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Tue Jan 23 22:30:19 2018
+-- Created by Microsemi SmartDesign Wed Jan 24 08:12:49 2018
 -- Parameters for CoreGPIO
 ----------------------------------------------------------------------
 

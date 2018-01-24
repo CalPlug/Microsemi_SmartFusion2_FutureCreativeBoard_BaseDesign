@@ -4,7 +4,7 @@
  * Kerry D. Wong
  * http://www.kerrywong.com, http://www.kerrywong.com/2014/05/10/mcp3903-library/, https://github.com/kerrydwong/MCP3903) * 5/2014
 
-Modified for use for the Microsemi Future Creative Board by Michael Klopfer, Ph.D.
+Modified for use for the Microsemi Future Creative Board by Yutian Ren and Michael Klopfer, Ph.D.
 University of California, Irvine
 2018
 

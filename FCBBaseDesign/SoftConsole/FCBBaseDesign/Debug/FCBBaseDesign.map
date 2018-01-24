@@ -1207,6 +1207,7 @@ Discarded input sections
  .group         0x00000000        0x8 ./main.o
  .group         0x00000000        0x8 ./main.o
  .group         0x00000000        0x8 ./main.o
+ .group         0x00000000        0x8 ./main.o
  .text          0x00000000        0x0 ./main.o
  .data          0x00000000        0x0 ./main.o
  .bss           0x00000000        0x0 ./main.o
@@ -2321,7 +2322,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xf787
+.debug_info     0x00000000     0xf786
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x306 ./src/demo.o
  .debug_info    0x00000306       0xbc ./hal/CortexM3/GNU/hal.o
@@ -2343,9 +2344,9 @@ END GROUP
  .debug_info    0x0000cd75       0xc8 ./CMSIS/startup_gcc/startup_m2sxxx.o
  .debug_info    0x0000ce3d      0xab9 ./CMSIS/system_m2sxxx.o
  .debug_info    0x0000d8f6       0x21 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_info    0x0000d917     0x1e70 ./main.o
+ .debug_info    0x0000d917     0x1e6f ./main.o
 
-.debug_abbrev   0x00000000     0x2089
+.debug_abbrev   0x00000000     0x20a1
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0xe6 ./src/demo.o
  .debug_abbrev  0x000000e6       0x14 ./hal/CortexM3/GNU/hal.o
@@ -2367,9 +2368,9 @@ END GROUP
  .debug_abbrev  0x00001b87       0x14 ./CMSIS/startup_gcc/startup_m2sxxx.o
  .debug_abbrev  0x00001b9b      0x190 ./CMSIS/system_m2sxxx.o
  .debug_abbrev  0x00001d2b       0x13 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_abbrev  0x00001d3e      0x34b ./main.o
+ .debug_abbrev  0x00001d3e      0x363 ./main.o
 
-.debug_line     0x00000000     0x627c
+.debug_line     0x00000000     0x628c
  *(.debug_line)
  .debug_line    0x00000000      0x24e ./src/demo.o
  .debug_line    0x0000024e       0x4d ./hal/CortexM3/GNU/hal.o
@@ -2391,7 +2392,7 @@ END GROUP
  .debug_line    0x000056b1      0x18e ./CMSIS/startup_gcc/startup_m2sxxx.o
  .debug_line    0x0000583f      0x37d ./CMSIS/system_m2sxxx.o
  .debug_line    0x00005bbc       0x58 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_line    0x00005c14      0x668 ./main.o
+ .debug_line    0x00005c14      0x678 ./main.o
 
 .debug_frame    0x00000000     0x37d4
  *(.debug_frame)
@@ -2459,7 +2460,7 @@ END GROUP
  .debug_frame   0x00003788       0x2c c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\librdimon.a(rdimon-_kill.o)
  .debug_frame   0x000037b4       0x20 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-errno.o)
 
-.debug_str      0x00000000    0x17f5c
+.debug_str      0x00000000    0x17fa5
  *(.debug_str)
  .debug_str     0x00000000     0x350f ./src/demo.o
                                0x37e8 (size before relaxing)
@@ -2495,8 +2496,8 @@ END GROUP
                                0x9990 (size before relaxing)
  .debug_str     0x00016881       0x38 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
                                0x256c (size before relaxing)
- .debug_str     0x000168b9     0x16a3 ./main.o
-                               0xef59 (size before relaxing)
+ .debug_str     0x000168b9     0x16ec ./main.o
+                               0xefa3 (size before relaxing)
 
 .debug_loc
  *(.debug_loc)
@@ -2700,7 +2701,7 @@ OUTPUT(FCBBaseDesign.elf elf32-littlearm)
  .debug_ranges  0x00000830       0x58 ./CMSIS/system_m2sxxx.o
  .debug_ranges  0x00000888       0x80 ./main.o
 
-.debug_macro    0x00000000     0x5839
+.debug_macro    0x00000000     0x5882
  .debug_macro   0x00000000       0x91 ./src/demo.o
  .debug_macro   0x00000091      0x898 ./src/demo.o
  .debug_macro   0x00000929       0x22 ./src/demo.o
@@ -2763,24 +2764,25 @@ OUTPUT(FCBBaseDesign.elf elf32-littlearm)
  .debug_macro   0x00004ca0       0x64 ./drivers/CoreGPIO/core_gpio.o
  .debug_macro   0x00004d04      0x173 ./CMSIS/system_m2sxxx.o
  .debug_macro   0x00004e77       0x11 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_macro   0x00004e88      0x2da ./main.o
- .debug_macro   0x00005162       0x22 ./main.o
- .debug_macro   0x00005184       0x3a ./main.o
- .debug_macro   0x000051be       0x19 ./main.o
- .debug_macro   0x000051d7      0x122 ./main.o
- .debug_macro   0x000052f9       0x16 ./main.o
- .debug_macro   0x0000530f       0x97 ./main.o
- .debug_macro   0x000053a6       0xfd ./main.o
- .debug_macro   0x000054a3       0x10 ./main.o
- .debug_macro   0x000054b3       0x10 ./main.o
- .debug_macro   0x000054c3       0x1c ./main.o
- .debug_macro   0x000054df       0x52 ./main.o
- .debug_macro   0x00005531       0x40 ./main.o
- .debug_macro   0x00005571       0x10 ./main.o
- .debug_macro   0x00005581       0x40 ./main.o
- .debug_macro   0x000055c1       0xd7 ./main.o
- .debug_macro   0x00005698       0x16 ./main.o
- .debug_macro   0x000056ae      0x18b ./main.o
+ .debug_macro   0x00004e88      0x2ef ./main.o
+ .debug_macro   0x00005177       0x10 ./main.o
+ .debug_macro   0x00005187       0x3a ./main.o
+ .debug_macro   0x000051c1       0x19 ./main.o
+ .debug_macro   0x000051da      0x122 ./main.o
+ .debug_macro   0x000052fc       0x16 ./main.o
+ .debug_macro   0x00005312       0x97 ./main.o
+ .debug_macro   0x000053a9       0xfd ./main.o
+ .debug_macro   0x000054a6       0x10 ./main.o
+ .debug_macro   0x000054b6       0x10 ./main.o
+ .debug_macro   0x000054c6       0x1c ./main.o
+ .debug_macro   0x000054e2       0x52 ./main.o
+ .debug_macro   0x00005534       0x40 ./main.o
+ .debug_macro   0x00005574       0x10 ./main.o
+ .debug_macro   0x00005584       0x40 ./main.o
+ .debug_macro   0x000055c4       0xd7 ./main.o
+ .debug_macro   0x0000569b       0x16 ./main.o
+ .debug_macro   0x000056b1      0x18b ./main.o
+ .debug_macro   0x0000583c       0x46 ./main.o
 
 .comment        0x00000000       0x7f
  .comment       0x00000000       0x7f ./src/demo.o
