@@ -12,10 +12,10 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="org.eclipse.cdt.debug.mi.core.GDBServerCDebugger"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/servoarm.elf"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="FCBBaseDesign"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="FCBBaseDesignx"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1421636233"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/FCBBaseDesign"/>
+<listEntry value="/FCBBaseDesignx"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
