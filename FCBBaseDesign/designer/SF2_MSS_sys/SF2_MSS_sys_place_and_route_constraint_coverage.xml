@@ -3,7 +3,7 @@
 <doc>
 <text>SmartTime Version 11.8.2.4</text>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
-Date: Wed Jan 24 21:25:16 2018 </text>
+Date: Wed Jan 24 22:51:39 2018 </text>
 <table>
 <header>
 </header>
@@ -63,14 +63,14 @@ Date: Wed Jan 24 21:25:16 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           35</cell>
- <cell>           35</cell>
+ <cell>           36</cell>
+ <cell>           36</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>         2465</cell>
- <cell>           48</cell>
- <cell>         2513</cell>
+ <cell>           49</cell>
+ <cell>         2514</cell>
 </row>
 <separator/>
 <row>
@@ -88,14 +88,14 @@ Date: Wed Jan 24 21:25:16 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           35</cell>
- <cell>           35</cell>
+ <cell>           36</cell>
+ <cell>           36</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>         2465</cell>
- <cell>           48</cell>
- <cell>         2513</cell>
+ <cell>           49</cell>
+ <cell>         2514</cell>
 </row>
 </table>
 <section>
@@ -124,14 +124,14 @@ Date: Wed Jan 24 21:25:16 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           19</cell>
- <cell>           19</cell>
+ <cell>           20</cell>
+ <cell>           20</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>         2361</cell>
- <cell>           29</cell>
- <cell>         2390</cell>
+ <cell>           30</cell>
+ <cell>         2391</cell>
 </row>
 <separator/>
 <row>
@@ -149,14 +149,14 @@ Date: Wed Jan 24 21:25:16 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           19</cell>
- <cell>           19</cell>
+ <cell>           20</cell>
+ <cell>           20</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>         2361</cell>
- <cell>           29</cell>
- <cell>         2390</cell>
+ <cell>           30</cell>
+ <cell>         2391</cell>
 </row>
 </table>
 <section>
@@ -171,8 +171,8 @@ Date: Wed Jan 24 21:25:16 2018 </text>
  <item>RX</item>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
- <item>SPIDI0</item>
- <item>SPISDI</item>
+ <item>SPISDI0</item>
+ <item>SPISDI1</item>
 </list>
 <text></text>
 <text> - Min input delay constraint missing on ports:</text>
@@ -184,8 +184,8 @@ Date: Wed Jan 24 21:25:16 2018 </text>
  <item>RX</item>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
- <item>SPIDI0</item>
- <item>SPISDI</item>
+ <item>SPISDI0</item>
+ <item>SPISDI1</item>
 </list>
 <text></text>
 <text></text>
@@ -205,10 +205,11 @@ Date: Wed Jan 24 21:25:16 2018 </text>
  <item>PWM[7]</item>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
- <item>SPISCLK</item>
+ <item>SPISCLK0</item>
  <item>SPISCLK1</item>
- <item>SPISDO</item>
- <item>SPISS</item>
+ <item>SPISDO0</item>
+ <item>SPISDO1</item>
+ <item>SPISS0</item>
  <item>SPISS1</item>
  <item>TX</item>
 </list>
@@ -229,10 +230,11 @@ Date: Wed Jan 24 21:25:16 2018 </text>
  <item>PWM[7]</item>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
- <item>SPISCLK</item>
+ <item>SPISCLK0</item>
  <item>SPISCLK1</item>
- <item>SPISDO</item>
- <item>SPISS</item>
+ <item>SPISDO0</item>
+ <item>SPISDO1</item>
+ <item>SPISS0</item>
  <item>SPISS1</item>
  <item>TX</item>
 </list>

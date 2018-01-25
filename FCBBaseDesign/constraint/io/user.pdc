@@ -157,29 +157,57 @@ set_io {SDA[0]}          \
     -fixed yes         \
     -DIRECTION INOUT
 
-
-set_io SPISDI          \
+####
+set_io SPISDI0          \
     -pinname F3       \
     -fixed yes         \
     -iostd LVCMOS33    \
     -DIRECTION INPUT
 
 
-set_io SPISDO           \
+set_io SPISDO0           \
     -pinname F5        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
-set_io SPISCLK          \
+set_io SPISCLK0          \
     -pinname F2        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
-set_io SPISS            \
+set_io SPISS0            \
     -pinname G2        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION OUTPUT   \
+
+####
+set_io SPISDI1          \
+    -pinname T13       \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -DIRECTION INPUT
+
+
+set_io SPISDO1           \
+    -pinname R13        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -DIRECTION OUTPUT
+
+set_io SPISCLK1          \
+    -pinname R12        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -DIRECTION OUTPUT
+
+
+set_io SPISS1            \
+    -pinname P13        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -OUT_DRIVE 16      \

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Jan 24 21:17:06 2018
+-- Created by SmartDesign Wed Jan 24 22:41:12 2018
 -- Version: v11.8 SP2 11.8.2.4
 ----------------------------------------------------------------------
 
@@ -38,8 +38,8 @@ entity SF2_MSS_sys_sb is
         FAB_RESET_N      : in    std_logic;
         GPIO_IN          : in    std_logic_vector(2 downto 0);
         RX               : in    std_logic;
-        SPIDI0           : in    std_logic;
-        SPISDI           : in    std_logic;
+        SPISDI0          : in    std_logic;
+        SPISDI1          : in    std_logic;
         SPI_0_CLK_F2M    : in    std_logic;
         SPI_0_DI_F2M     : in    std_logic;
         SPI_0_SS0_F2M    : in    std_logic;
@@ -51,10 +51,11 @@ entity SF2_MSS_sys_sb is
         MSS_READY        : out   std_logic;
         POWER_ON_RESET_N : out   std_logic;
         PWM              : out   std_logic_vector(7 downto 0);
-        SPISCLK          : out   std_logic;
+        SPISCLK0         : out   std_logic;
         SPISCLK1         : out   std_logic;
-        SPISDO           : out   std_logic;
-        SPISS            : out   std_logic;
+        SPISDO0          : out   std_logic;
+        SPISDO1          : out   std_logic;
+        SPISS0           : out   std_logic;
         SPISS1           : out   std_logic;
         SPI_0_CLK_M2F    : out   std_logic;
         SPI_0_DO_M2F     : out   std_logic;
@@ -495,9 +496,9 @@ signal SPI_0_SS1_M2F_net_0                                : std_logic;
 signal SPI_0_SS2_M2F_net_0                                : std_logic;
 signal SPI_0_SS3_M2F_net_0                                : std_logic;
 signal SPI_0_SS4_M2F_net_0                                : std_logic;
-signal SPISCLK_net_0                                      : std_logic;
-signal SPISDO_net_0                                       : std_logic;
-signal SPISS_net_0                                        : std_logic_vector(0 to 0);
+signal SPISCLK0_net_0                                     : std_logic;
+signal SPISDO1_net_0                                      : std_logic;
+signal SPISS0_net_0                                       : std_logic_vector(0 to 0);
 signal SPISS1_net_0                                       : std_logic_vector(1 to 1);
 signal TX_net_0                                           : std_logic;
 signal POWER_ON_RESET_N_net_1                             : std_logic;
@@ -514,13 +515,14 @@ signal SPI_0_SS2_M2F_net_1                                : std_logic;
 signal SPI_0_SS3_M2F_net_1                                : std_logic;
 signal SPI_0_SS4_M2F_net_1                                : std_logic;
 signal TX_net_1                                           : std_logic;
-signal SPISCLK_net_1                                      : std_logic;
-signal SPISDO_net_1                                       : std_logic;
-signal SPISS_net_1                                        : std_logic;
+signal SPISCLK0_net_1                                     : std_logic;
+signal SPISDO1_net_1                                      : std_logic;
+signal SPISS0_net_1                                       : std_logic;
+signal SPISCLK0_net_2                                     : std_logic;
+signal SPISS1_net_1                                       : std_logic;
 signal PWM_1_net_0                                        : std_logic_vector(7 downto 0);
 signal GPIO_OUT_1_net_0                                   : std_logic_vector(2 downto 0);
-signal SPISCLK_net_2                                      : std_logic;
-signal SPISS1_net_1                                       : std_logic;
+signal SPISDO1_net_2                                      : std_logic;
 signal GPIO_OUT_slice_0                                   : std_logic_vector(0 to 0);
 signal GPIO_OUT_slice_1                                   : std_logic_vector(1 to 1);
 signal GPIO_OUT_slice_2                                   : std_logic_vector(2 to 2);
@@ -530,7 +532,7 @@ signal SPISS_slice_2                                      : std_logic_vector(4 t
 signal SPISS_slice_3                                      : std_logic_vector(5 to 5);
 signal SPISS_slice_4                                      : std_logic_vector(6 to 6);
 signal SPISS_slice_5                                      : std_logic_vector(7 to 7);
-signal SPISS_net_2                                        : std_logic_vector(7 downto 0);
+signal SPISS_net_0                                        : std_logic_vector(7 downto 0);
 signal MSS_INT_F2M_net_0                                  : std_logic_vector(15 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
@@ -560,40 +562,40 @@ signal FIC_2_APB_M_PRDATA_const_net_0                     : std_logic_vector(31 
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
 ----------------------------------------------------------------------
+signal CoreAPB3_0_APBmslave0_PADDR_4_6to0                 : std_logic_vector(6 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_4                      : std_logic_vector(6 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_2_4to0                 : std_logic_vector(4 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_2                      : std_logic_vector(4 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_1_7to0                 : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_1                      : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR                        : std_logic_vector(31 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_0_7to0                 : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_0                      : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_3_8to0                 : std_logic_vector(8 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_3                      : std_logic_vector(8 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR                        : std_logic_vector(31 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_4_6to0                 : std_logic_vector(6 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_4                      : std_logic_vector(6 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_1_7to0                 : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_1                      : std_logic_vector(7 downto 0);
 
-signal CoreAPB3_0_APBmslave0_PRDATA                       : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PRDATA_0_31to16              : std_logic_vector(31 downto 16);
 signal CoreAPB3_0_APBmslave0_PRDATA_0_15to0               : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PRDATA_0                     : std_logic_vector(31 downto 0);
+signal CoreAPB3_0_APBmslave0_PRDATA                       : std_logic_vector(15 downto 0);
 
+signal CoreAPB3_0_APBmslave0_PWDATA                       : std_logic_vector(31 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_1_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_1                     : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA_0_15to0               : std_logic_vector(15 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA_0                     : std_logic_vector(15 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA                       : std_logic_vector(31 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_2_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_2                     : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_0_15to0               : std_logic_vector(15 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_0                     : std_logic_vector(15 downto 0);
 
 signal CoreAPB3_0_APBmslave2_PRDATA                       : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave2_PRDATA_0_31to8               : std_logic_vector(31 downto 8);
 signal CoreAPB3_0_APBmslave2_PRDATA_0_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave2_PRDATA_0                     : std_logic_vector(31 downto 0);
 
-signal CoreAPB3_0_APBmslave3_PRDATA                       : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave3_PRDATA_0_31to8               : std_logic_vector(31 downto 8);
 signal CoreAPB3_0_APBmslave3_PRDATA_0_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave3_PRDATA_0                     : std_logic_vector(31 downto 0);
+signal CoreAPB3_0_APBmslave3_PRDATA                       : std_logic_vector(7 downto 0);
 
 
 begin
@@ -653,34 +655,36 @@ begin
  SPI_0_SS4_M2F          <= SPI_0_SS4_M2F_net_1;
  TX_net_1               <= TX_net_0;
  TX                     <= TX_net_1;
- SPISCLK_net_1          <= SPISCLK_net_0;
- SPISCLK                <= SPISCLK_net_1;
- SPISDO_net_1           <= SPISDO_net_0;
- SPISDO                 <= SPISDO_net_1;
- SPISS_net_1            <= SPISS_net_0(0);
- SPISS                  <= SPISS_net_1;
+ SPISCLK0_net_1         <= SPISCLK0_net_0;
+ SPISCLK0               <= SPISCLK0_net_1;
+ SPISDO1_net_1          <= SPISDO1_net_0;
+ SPISDO0                <= SPISDO1_net_1;
+ SPISS0_net_1           <= SPISS0_net_0(0);
+ SPISS0                 <= SPISS0_net_1;
+ SPISCLK0_net_2         <= SPISCLK0_net_0;
+ SPISCLK1               <= SPISCLK0_net_2;
+ SPISS1_net_1           <= SPISS1_net_0(1);
+ SPISS1                 <= SPISS1_net_1;
  PWM_1_net_0            <= PWM_1;
  PWM(7 downto 0)        <= PWM_1_net_0;
  GPIO_OUT_1_net_0       <= GPIO_OUT_1;
  GPIO_OUT(2 downto 0)   <= GPIO_OUT_1_net_0;
- SPISCLK_net_2          <= SPISCLK_net_0;
- SPISCLK1               <= SPISCLK_net_2;
- SPISS1_net_1           <= SPISS1_net_0(1);
- SPISS1                 <= SPISS1_net_1;
+ SPISDO1_net_2          <= SPISDO1_net_0;
+ SPISDO1                <= SPISDO1_net_2;
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
- SPISS_net_0(0)      <= SPISS_net_2(0);
- SPISS1_net_0(1)     <= SPISS_net_2(1);
+ SPISS0_net_0(0)     <= SPISS_net_0(0);
+ SPISS1_net_0(1)     <= SPISS_net_0(1);
  GPIO_OUT_slice_0(0) <= GPIO_OUT_1(0);
  GPIO_OUT_slice_1(1) <= GPIO_OUT_1(1);
  GPIO_OUT_slice_2(2) <= GPIO_OUT_1(2);
- SPISS_slice_0(2)    <= SPISS_net_2(2);
- SPISS_slice_1(3)    <= SPISS_net_2(3);
- SPISS_slice_2(4)    <= SPISS_net_2(4);
- SPISS_slice_3(5)    <= SPISS_net_2(5);
- SPISS_slice_4(6)    <= SPISS_net_2(6);
- SPISS_slice_5(7)    <= SPISS_net_2(7);
+ SPISS_slice_0(2)    <= SPISS_net_0(2);
+ SPISS_slice_1(3)    <= SPISS_net_0(3);
+ SPISS_slice_2(4)    <= SPISS_net_0(4);
+ SPISS_slice_3(5)    <= SPISS_net_0(5);
+ SPISS_slice_4(6)    <= SPISS_net_0(6);
+ SPISS_slice_5(7)    <= SPISS_net_0(7);
 ----------------------------------------------------------------------
 -- Concatenation assignments
 ----------------------------------------------------------------------
@@ -688,16 +692,16 @@ begin
 ----------------------------------------------------------------------
 -- Bus Interface Nets Assignments - Unequal Pin Widths
 ----------------------------------------------------------------------
+ CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(6 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_4 <= ( CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_2_4to0(4 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(4 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_2 <= ( CoreAPB3_0_APBmslave0_PADDR_2_4to0(4 downto 0) );
- CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_1 <= ( CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_0 <= ( CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(8 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_3 <= ( CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) );
- CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(6 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_4 <= ( CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_1 <= ( CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) );
 
  CoreAPB3_0_APBmslave0_PRDATA_0_31to16(31 downto 16) <= B"0000000000000000";
  CoreAPB3_0_APBmslave0_PRDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PRDATA(15 downto 0);
@@ -705,10 +709,10 @@ begin
 
  CoreAPB3_0_APBmslave0_PWDATA_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
  CoreAPB3_0_APBmslave0_PWDATA_1 <= ( CoreAPB3_0_APBmslave0_PWDATA_1_7to0(7 downto 0) );
- CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(15 downto 0);
- CoreAPB3_0_APBmslave0_PWDATA_0 <= ( CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) );
  CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
  CoreAPB3_0_APBmslave0_PWDATA_2 <= ( CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) );
+ CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(15 downto 0);
+ CoreAPB3_0_APBmslave0_PWDATA_0 <= ( CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) );
 
  CoreAPB3_0_APBmslave2_PRDATA_0_31to8(31 downto 8) <= B"000000000000000000000000";
  CoreAPB3_0_APBmslave2_PRDATA_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave2_PRDATA(7 downto 0);
@@ -1348,12 +1352,12 @@ CORESPI_0 : CORESPI
         SPIINT     => OPEN,
         SPIRXAVAIL => OPEN,
         SPITXRFM   => OPEN,
-        SPISCLKO   => SPISCLK_net_0,
+        SPISCLKO   => SPISCLK0_net_0,
         SPIOEN     => OPEN,
-        SPISDO     => SPISDO_net_0,
+        SPISDO     => SPISDO1_net_0,
         SPIMODE    => OPEN,
         PRDATA     => CoreAPB3_0_APBmslave4_PRDATA,
-        SPISS      => SPISS_net_2 
+        SPISS      => SPISS_net_0 
         );
 -- CoreUARTapb_0   -   Actel:DirectCore:CoreUARTapb:5.6.102
 CoreUARTapb_0 : SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb
@@ -1429,8 +1433,8 @@ IO_1 : SF2_MSS_sys_sb_IO_1_IO
 OR2_1 : OR2
     port map( 
         -- Inputs
-        A => SPISDI,
-        B => SPIDI0,
+        A => SPISDI0,
+        B => SPISDI1,
         -- Outputs
         Y => OR2_1_Y_0 
         );
