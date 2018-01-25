@@ -3,7 +3,7 @@
 <doc>
 <text>SmartTime Version 11.8.2.4</text>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
-Date: Wed Jan 24 16:23:03 2018 </text>
+Date: Wed Jan 24 21:25:16 2018 </text>
 <table>
 <header>
 </header>
@@ -63,14 +63,14 @@ Date: Wed Jan 24 16:23:03 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           33</cell>
- <cell>           33</cell>
+ <cell>           35</cell>
+ <cell>           35</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>         2465</cell>
- <cell>           46</cell>
- <cell>         2511</cell>
+ <cell>           48</cell>
+ <cell>         2513</cell>
 </row>
 <separator/>
 <row>
@@ -88,14 +88,14 @@ Date: Wed Jan 24 16:23:03 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           33</cell>
- <cell>           33</cell>
+ <cell>           35</cell>
+ <cell>           35</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>         2465</cell>
- <cell>           46</cell>
- <cell>         2511</cell>
+ <cell>           48</cell>
+ <cell>         2513</cell>
 </row>
 </table>
 <section>
@@ -124,14 +124,14 @@ Date: Wed Jan 24 16:23:03 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           17</cell>
- <cell>           17</cell>
+ <cell>           19</cell>
+ <cell>           19</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>         2361</cell>
- <cell>           27</cell>
- <cell>         2388</cell>
+ <cell>           29</cell>
+ <cell>         2390</cell>
 </row>
 <separator/>
 <row>
@@ -149,14 +149,14 @@ Date: Wed Jan 24 16:23:03 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           17</cell>
- <cell>           17</cell>
+ <cell>           19</cell>
+ <cell>           19</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>         2361</cell>
- <cell>           27</cell>
- <cell>         2388</cell>
+ <cell>           29</cell>
+ <cell>         2390</cell>
 </row>
 </table>
 <section>
@@ -171,6 +171,7 @@ Date: Wed Jan 24 16:23:03 2018 </text>
  <item>RX</item>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
+ <item>SPIDI0</item>
  <item>SPISDI</item>
 </list>
 <text></text>
@@ -183,6 +184,7 @@ Date: Wed Jan 24 16:23:03 2018 </text>
  <item>RX</item>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
+ <item>SPIDI0</item>
  <item>SPISDI</item>
 </list>
 <text></text>
@@ -204,8 +206,10 @@ Date: Wed Jan 24 16:23:03 2018 </text>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
  <item>SPISCLK</item>
+ <item>SPISCLK1</item>
  <item>SPISDO</item>
  <item>SPISS</item>
+ <item>SPISS1</item>
  <item>TX</item>
 </list>
 <text></text>
@@ -226,8 +230,10 @@ Date: Wed Jan 24 16:23:03 2018 </text>
  <item>SCL[0]</item>
  <item>SDA[0]</item>
  <item>SPISCLK</item>
+ <item>SPISCLK1</item>
  <item>SPISDO</item>
  <item>SPISS</item>
+ <item>SPISS1</item>
  <item>TX</item>
 </list>
 <text></text>
