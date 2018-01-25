@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FCBBaseDesign/servoarm Debug.launch&apos; to &apos;FCBBaseDesignDebug.launch&apos;" description="Rename resource &apos;servoarm Debug.launch&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="servoarm Debug.launch" name="FCBBaseDesignDebug.launch" stamp="1516908520315" updateReferences="true"/>
+</session>

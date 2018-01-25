@@ -1,8 +1,8 @@
-07:37:12 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
+12:54:10 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
 make all 
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "FCBBaseDesign.elf"
    text	   data	    bss	    dec	    hex	filename
-  10976	   1120	  53440	  65536	  10000	FCBBaseDesign.elf
+  17792	    144	  47600	  65536	  10000	FCBBaseDesign.elf
 Finished building: FCBBaseDesign.siz
  

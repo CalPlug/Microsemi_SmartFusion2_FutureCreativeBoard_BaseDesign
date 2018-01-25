@@ -1,4 +1,4 @@
-activeuserprofiles=MikesDesktop-PC;Team;mspc1
+activeuserprofiles=CalPlug-HP;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=Hiperwall
-useridperkey=mspc1.Local\=Hiperwall;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=CalPlug
+useridperkey=CalPlug-HP.Local\=CalPlug;
