@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Wed Jan 24 08:12:50 2018
+-- Created by Microsemi SmartDesign Wed Jan 24 16:19:40 2018
 -- Parameters for CORESPI
 ----------------------------------------------------------------------
 
@@ -11,9 +11,9 @@ LIBRARY ieee;
 
 package coreparameters is
     constant APB_DWIDTH : integer := 32;
-    constant CFG_CLK : integer := 7;
-    constant CFG_FIFO_DEPTH : integer := 4;
-    constant CFG_FRAME_SIZE : integer := 4;
+    constant CFG_CLK : integer := 33;
+    constant CFG_FIFO_DEPTH : integer := 32;
+    constant CFG_FRAME_SIZE : integer := 8;
     constant CFG_MODE : integer := 0;
     constant CFG_MOT_MODE : integer := 0;
     constant CFG_MOT_SSEL : integer := 0;

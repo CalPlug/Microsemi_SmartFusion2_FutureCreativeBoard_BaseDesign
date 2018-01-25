@@ -159,27 +159,27 @@ set_io {SDA[0]}          \
 
 
 set_io SPISDI          \
-    -pinname T13       \
+    -pinname F3       \
     -fixed yes         \
     -iostd LVCMOS33    \
     -DIRECTION INPUT
 
 
 set_io SPISDO           \
-    -pinname R13        \
+    -pinname F5        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 set_io SPISCLK          \
-    -pinname R12        \
+    -pinname F2        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io SPISS            \
-    -pinname P13        \
+    -pinname G2        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -OUT_DRIVE 16      \

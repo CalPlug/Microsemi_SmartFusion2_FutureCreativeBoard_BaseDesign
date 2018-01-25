@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Wed Jan 24 08:12:49 2018
+-- Created by Microsemi SmartDesign Wed Jan 24 16:19:40 2018
 -- Parameters for CoreGPIO
 ----------------------------------------------------------------------
 
@@ -15,7 +15,7 @@ package coreparameters is
     constant FIXED_CONFIG_0 : integer := 0;
     constant FIXED_CONFIG_1 : integer := 0;
     constant FIXED_CONFIG_2 : integer := 0;
-    constant FIXED_CONFIG_3 : integer := 0;
+    constant FIXED_CONFIG_3 : integer := 1;
     constant FIXED_CONFIG_4 : integer := 0;
     constant FIXED_CONFIG_5 : integer := 0;
     constant FIXED_CONFIG_6 : integer := 0;
@@ -82,7 +82,7 @@ package coreparameters is
     constant IO_TYPE_0 : integer := 0;
     constant IO_TYPE_1 : integer := 0;
     constant IO_TYPE_2 : integer := 0;
-    constant IO_TYPE_3 : integer := 0;
+    constant IO_TYPE_3 : integer := 1;
     constant IO_TYPE_4 : integer := 0;
     constant IO_TYPE_5 : integer := 0;
     constant IO_TYPE_6 : integer := 0;

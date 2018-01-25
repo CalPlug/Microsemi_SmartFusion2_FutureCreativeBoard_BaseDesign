@@ -7,7 +7,6 @@
  */
 
 #include "include.h"
-#include "src\MCP3903.h"
 //***Instance for SPI for ADC on-board Future Creative Board
 spi_instance_t g_core_spi0;
 
@@ -51,7 +50,7 @@ uint32_t duty_cycle = 1;  //Set PWM initial duty cycle
 /******************************************************************************
  * CoreSPI instance data.
  *****************************************************************************/
-#define CORE_SPI0_BASE_ADDRESS	0x50004000
+#define CORE_SPI0_BASE_ADDR	0x50004000
 
 
 /******************************************************************************
@@ -145,7 +144,7 @@ int main( void )
 * Initialize communication components of application
 *************************************************************************/
         //Initialize MCP3903
-	    	SPI_init(&g_core_spi0, CORE_SPI0_BASE_ADDRESS,8);//for LCD
+	    	SPI_init(&g_core_spi0, CORE_SPI0_BASE_ADDR,8);//for LCD
 	    	SPI_configure_master_mode(&g_core_spi0);
 	    	MCP3903ResetOSR(OSR_256, &g_core_spi0);   //Send with OSR256 constant (value of 0x3, see library)
 	        MCP3903SetGain(1,GAIN_8, &g_core_spi0);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)

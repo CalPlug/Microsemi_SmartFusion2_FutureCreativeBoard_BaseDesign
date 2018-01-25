@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
 
-Date      :  Tue Jan 23 17:31:13 2018
+Date      :  Wed Jan 24 16:20:30 2018
 Project   :  C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign
 Component :  SF2_MSS_sys
 Family    :  SmartFusion2

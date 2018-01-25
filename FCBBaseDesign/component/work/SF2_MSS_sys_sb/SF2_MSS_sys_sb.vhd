@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Jan 24 08:13:02 2018
+-- Created by SmartDesign Wed Jan 24 16:19:44 2018
 -- Version: v11.8 SP2 11.8.2.4
 ----------------------------------------------------------------------
 
@@ -238,9 +238,9 @@ end component;
 component CORESPI
     generic( 
         APB_DWIDTH        : integer := 32 ;
-        CFG_CLK           : integer := 7 ;
-        CFG_FIFO_DEPTH    : integer := 4 ;
-        CFG_FRAME_SIZE    : integer := 4 ;
+        CFG_CLK           : integer := 33 ;
+        CFG_FIFO_DEPTH    : integer := 32 ;
+        CFG_FRAME_SIZE    : integer := 8 ;
         CFG_MODE          : integer := 0 ;
         CFG_MOT_MODE      : integer := 0 ;
         CFG_MOT_SSEL      : integer := 0 ;
@@ -453,7 +453,7 @@ signal FAB_CCC_GL0_net_0                                  : std_logic;
 signal FAB_CCC_LOCK_net_0                                 : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_O2F                        : std_logic;
-signal GPIO_OUT_0                                         : std_logic_vector(2 downto 0);
+signal GPIO_OUT_1                                         : std_logic_vector(2 downto 0);
 signal INIT_DONE_net_0                                    : std_logic;
 signal IO_0_Y                                             : std_logic_vector(0 to 0);
 signal IO_1_Y                                             : std_logic_vector(0 to 0);
@@ -502,7 +502,10 @@ signal SPISCLK_net_1                                      : std_logic;
 signal SPISDO_net_1                                       : std_logic;
 signal SPISS_net_1                                        : std_logic;
 signal PWM_1_net_0                                        : std_logic_vector(7 downto 0);
-signal GPIO_OUT_0_net_0                                   : std_logic_vector(2 downto 0);
+signal GPIO_OUT_1_net_0                                   : std_logic_vector(2 downto 0);
+signal GPIO_OUT_slice_0                                   : std_logic_vector(0 to 0);
+signal GPIO_OUT_slice_1                                   : std_logic_vector(1 to 1);
+signal GPIO_OUT_slice_2                                   : std_logic_vector(2 to 2);
 signal SPISS_slice_0                                      : std_logic_vector(1 to 1);
 signal SPISS_slice_1                                      : std_logic_vector(2 to 2);
 signal SPISS_slice_2                                      : std_logic_vector(3 to 3);
@@ -540,35 +543,35 @@ signal FIC_2_APB_M_PRDATA_const_net_0                     : std_logic_vector(31 
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
 ----------------------------------------------------------------------
-signal CoreAPB3_0_APBmslave0_PADDR_4_6to0                 : std_logic_vector(6 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_4                      : std_logic_vector(6 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_1_7to0                 : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_1                      : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_3_8to0                 : std_logic_vector(8 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_3                      : std_logic_vector(8 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_0_7to0                 : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_0                      : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR                        : std_logic_vector(31 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_4_6to0                 : std_logic_vector(6 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_4                      : std_logic_vector(6 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_2_4to0                 : std_logic_vector(4 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_2                      : std_logic_vector(4 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_0_7to0                 : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_0                      : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_3_8to0                 : std_logic_vector(8 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_3                      : std_logic_vector(8 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR                        : std_logic_vector(31 downto 0);
 
 signal CoreAPB3_0_APBmslave0_PRDATA                       : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PRDATA_0_31to16              : std_logic_vector(31 downto 16);
 signal CoreAPB3_0_APBmslave0_PRDATA_0_15to0               : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PRDATA_0                     : std_logic_vector(31 downto 0);
 
-signal CoreAPB3_0_APBmslave0_PWDATA_2_7to0                : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA_2                     : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA_0_15to0               : std_logic_vector(15 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA_0                     : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA                       : std_logic_vector(31 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_1_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_1                     : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_0_15to0               : std_logic_vector(15 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_0                     : std_logic_vector(15 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_2_7to0                : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_2                     : std_logic_vector(7 downto 0);
 
+signal CoreAPB3_0_APBmslave2_PRDATA                       : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave2_PRDATA_0_31to8               : std_logic_vector(31 downto 8);
 signal CoreAPB3_0_APBmslave2_PRDATA_0_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave2_PRDATA_0                     : std_logic_vector(31 downto 0);
-signal CoreAPB3_0_APBmslave2_PRDATA                       : std_logic_vector(7 downto 0);
 
 signal CoreAPB3_0_APBmslave3_PRDATA                       : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave3_PRDATA_0_31to8               : std_logic_vector(31 downto 8);
@@ -641,19 +644,22 @@ begin
  SPISS                  <= SPISS_net_1;
  PWM_1_net_0            <= PWM_1;
  PWM(7 downto 0)        <= PWM_1_net_0;
- GPIO_OUT_0_net_0       <= GPIO_OUT_0;
- GPIO_OUT(2 downto 0)   <= GPIO_OUT_0_net_0;
+ GPIO_OUT_1_net_0       <= GPIO_OUT_1;
+ GPIO_OUT(2 downto 0)   <= GPIO_OUT_1_net_0;
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
- SPISS_net_0(0)   <= SPISS_net_2(0);
- SPISS_slice_0(1) <= SPISS_net_2(1);
- SPISS_slice_1(2) <= SPISS_net_2(2);
- SPISS_slice_2(3) <= SPISS_net_2(3);
- SPISS_slice_3(4) <= SPISS_net_2(4);
- SPISS_slice_4(5) <= SPISS_net_2(5);
- SPISS_slice_5(6) <= SPISS_net_2(6);
- SPISS_slice_6(7) <= SPISS_net_2(7);
+ SPISS_net_0(0)      <= SPISS_net_2(0);
+ GPIO_OUT_slice_0(0) <= GPIO_OUT_1(0);
+ GPIO_OUT_slice_1(1) <= GPIO_OUT_1(1);
+ GPIO_OUT_slice_2(2) <= GPIO_OUT_1(2);
+ SPISS_slice_0(1)    <= SPISS_net_2(1);
+ SPISS_slice_1(2)    <= SPISS_net_2(2);
+ SPISS_slice_2(3)    <= SPISS_net_2(3);
+ SPISS_slice_3(4)    <= SPISS_net_2(4);
+ SPISS_slice_4(5)    <= SPISS_net_2(5);
+ SPISS_slice_5(6)    <= SPISS_net_2(6);
+ SPISS_slice_6(7)    <= SPISS_net_2(7);
 ----------------------------------------------------------------------
 -- Concatenation assignments
 ----------------------------------------------------------------------
@@ -661,27 +667,27 @@ begin
 ----------------------------------------------------------------------
 -- Bus Interface Nets Assignments - Unequal Pin Widths
 ----------------------------------------------------------------------
- CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(6 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_4 <= ( CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_1 <= ( CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) );
- CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(8 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_3 <= ( CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) );
- CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_0 <= ( CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(6 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_4 <= ( CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_2_4to0(4 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(4 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_2 <= ( CoreAPB3_0_APBmslave0_PADDR_2_4to0(4 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_0 <= ( CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(8 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_3 <= ( CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) );
 
  CoreAPB3_0_APBmslave0_PRDATA_0_31to16(31 downto 16) <= B"0000000000000000";
  CoreAPB3_0_APBmslave0_PRDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PRDATA(15 downto 0);
  CoreAPB3_0_APBmslave0_PRDATA_0 <= ( CoreAPB3_0_APBmslave0_PRDATA_0_31to16(31 downto 16) & CoreAPB3_0_APBmslave0_PRDATA_0_15to0(15 downto 0) );
 
- CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
- CoreAPB3_0_APBmslave0_PWDATA_2 <= ( CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) );
- CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(15 downto 0);
- CoreAPB3_0_APBmslave0_PWDATA_0 <= ( CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) );
  CoreAPB3_0_APBmslave0_PWDATA_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
  CoreAPB3_0_APBmslave0_PWDATA_1 <= ( CoreAPB3_0_APBmslave0_PWDATA_1_7to0(7 downto 0) );
+ CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(15 downto 0);
+ CoreAPB3_0_APBmslave0_PWDATA_0 <= ( CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) );
+ CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
+ CoreAPB3_0_APBmslave0_PWDATA_2 <= ( CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) );
 
  CoreAPB3_0_APBmslave2_PRDATA_0_31to8(31 downto 8) <= B"000000000000000000000000";
  CoreAPB3_0_APBmslave2_PRDATA_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave2_PRDATA(7 downto 0);
@@ -840,7 +846,7 @@ CoreGPIO_0 : entity COREGPIO_LIB.CoreGPIO
         FIXED_CONFIG_0  => ( 0 ),
         FIXED_CONFIG_1  => ( 0 ),
         FIXED_CONFIG_2  => ( 0 ),
-        FIXED_CONFIG_3  => ( 0 ),
+        FIXED_CONFIG_3  => ( 1 ),
         FIXED_CONFIG_4  => ( 0 ),
         FIXED_CONFIG_5  => ( 0 ),
         FIXED_CONFIG_6  => ( 0 ),
@@ -906,7 +912,7 @@ CoreGPIO_0 : entity COREGPIO_LIB.CoreGPIO
         IO_TYPE_0       => ( 0 ),
         IO_TYPE_1       => ( 0 ),
         IO_TYPE_2       => ( 0 ),
-        IO_TYPE_3       => ( 0 ),
+        IO_TYPE_3       => ( 1 ),
         IO_TYPE_4       => ( 0 ),
         IO_TYPE_5       => ( 0 ),
         IO_TYPE_6       => ( 0 ),
@@ -985,7 +991,7 @@ CoreGPIO_0 : entity COREGPIO_LIB.CoreGPIO
         INT_OR   => CoreGPIO_0_INT_OR,
         PRDATA   => CoreAPB3_0_APBmslave1_PRDATA,
         INT      => OPEN,
-        GPIO_OUT => GPIO_OUT_0,
+        GPIO_OUT => GPIO_OUT_1,
         GPIO_OE  => OPEN 
         );
 -- COREI2C_0   -   Actel:DirectCore:COREI2C:7.2.101
@@ -1291,9 +1297,9 @@ CORERESETP_0 : CoreResetP
 CORESPI_0 : CORESPI
     generic map( 
         APB_DWIDTH        => ( 32 ),
-        CFG_CLK           => ( 7 ),
-        CFG_FIFO_DEPTH    => ( 4 ),
-        CFG_FRAME_SIZE    => ( 4 ),
+        CFG_CLK           => ( 33 ),
+        CFG_FIFO_DEPTH    => ( 32 ),
+        CFG_FRAME_SIZE    => ( 8 ),
         CFG_MODE          => ( 0 ),
         CFG_MOT_MODE      => ( 0 ),
         CFG_MOT_SSEL      => ( 0 ),
