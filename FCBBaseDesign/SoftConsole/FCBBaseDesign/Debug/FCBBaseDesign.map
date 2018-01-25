@@ -2210,30 +2210,30 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x10039
+.debug_info     0x00000000    0x10054
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x6de ./src/MCP3909.o
  .debug_info    0x000006de      0x306 ./src/demo.o
- .debug_info    0x000009e4       0xc5 ./hal/CortexM3/GNU/hal.o
- .debug_info    0x00000aa9       0xcf ./hal/CortexM3/GNU/hw_reg_access.o
- .debug_info    0x00000b78      0x18f ./hal/CortexM3/cortex_nvic.o
- .debug_info    0x00000d07       0x96 ./drivers_config/sys_config/sys_config.o
- .debug_info    0x00000d9d      0xadb ./drivers/mss_sys_services/mss_comblk.o
- .debug_info    0x00001878     0x262d ./drivers/mss_sys_services/mss_sys_services.o
- .debug_info    0x00003ea5     0x1da8 ./drivers/mss_spi/mss_spi.o
- .debug_info    0x00005c4d     0x195f ./drivers/mss_rtc/mss_rtc.o
- .debug_info    0x000075ac     0x11c4 ./drivers/mss_nvm/mss_nvm.o
- .debug_info    0x00008770     0x1145 ./drivers/mss_hpdma/mss_hpdma.o
- .debug_info    0x000098b5      0x374 ./drivers/CoreUARTapb/core_uart_apb.o
- .debug_info    0x00009c29      0xfc9 ./drivers/CoreSPI/core_spi.o
- .debug_info    0x0000abf2      0xafc ./drivers/CorePWM/core_pwm.o
- .debug_info    0x0000b6ee     0x14ab ./drivers/CoreI2C/core_i2c.o
- .debug_info    0x0000cb99      0x353 ./drivers/CoreI2C/i2c_interrupt.o
- .debug_info    0x0000ceec      0x579 ./drivers/CoreGPIO/core_gpio.o
- .debug_info    0x0000d465       0xd1 ./CMSIS/startup_gcc/startup_m2sxxx.o
- .debug_info    0x0000d536      0xab9 ./CMSIS/system_m2sxxx.o
- .debug_info    0x0000dfef       0x21 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_info    0x0000e010     0x2029 ./main.o
+ .debug_info    0x000009e4       0xce ./hal/CortexM3/GNU/hal.o
+ .debug_info    0x00000ab2       0xd8 ./hal/CortexM3/GNU/hw_reg_access.o
+ .debug_info    0x00000b8a      0x18f ./hal/CortexM3/cortex_nvic.o
+ .debug_info    0x00000d19       0x96 ./drivers_config/sys_config/sys_config.o
+ .debug_info    0x00000daf      0xadb ./drivers/mss_sys_services/mss_comblk.o
+ .debug_info    0x0000188a     0x262d ./drivers/mss_sys_services/mss_sys_services.o
+ .debug_info    0x00003eb7     0x1da8 ./drivers/mss_spi/mss_spi.o
+ .debug_info    0x00005c5f     0x195f ./drivers/mss_rtc/mss_rtc.o
+ .debug_info    0x000075be     0x11c4 ./drivers/mss_nvm/mss_nvm.o
+ .debug_info    0x00008782     0x1145 ./drivers/mss_hpdma/mss_hpdma.o
+ .debug_info    0x000098c7      0x374 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_info    0x00009c3b      0xfc9 ./drivers/CoreSPI/core_spi.o
+ .debug_info    0x0000ac04      0xafc ./drivers/CorePWM/core_pwm.o
+ .debug_info    0x0000b700     0x14ab ./drivers/CoreI2C/core_i2c.o
+ .debug_info    0x0000cbab      0x353 ./drivers/CoreI2C/i2c_interrupt.o
+ .debug_info    0x0000cefe      0x579 ./drivers/CoreGPIO/core_gpio.o
+ .debug_info    0x0000d477       0xda ./CMSIS/startup_gcc/startup_m2sxxx.o
+ .debug_info    0x0000d551      0xab9 ./CMSIS/system_m2sxxx.o
+ .debug_info    0x0000e00a       0x21 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_info    0x0000e02b     0x2029 ./main.o
 
 .debug_abbrev   0x00000000     0x21c3
  *(.debug_abbrev)
@@ -2334,46 +2334,46 @@ END GROUP
  .debug_frame   0x000032e0       0x30 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-readr.o)
  .debug_frame   0x00003310       0x58 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
 
-.debug_str      0x00000000    0x18044
+.debug_str      0x00000000    0x1804d
  *(.debug_str)
- .debug_str     0x00000000     0x3608 ./src/MCP3909.o
-                               0x38f5 (size before relaxing)
- .debug_str     0x00003608       0xbb ./src/demo.o
-                               0x37df (size before relaxing)
- .debug_str     0x000036c3      0x5db ./hal/CortexM3/cortex_nvic.o
-                               0x3a44 (size before relaxing)
- .debug_str     0x00003c9e     0x58a9 ./drivers_config/sys_config/sys_config.o
-                               0x8cd9 (size before relaxing)
- .debug_str     0x00009547      0xa1d ./drivers/mss_sys_services/mss_comblk.o
-                               0x9aa2 (size before relaxing)
- .debug_str     0x00009f64     0x5577 ./drivers/mss_sys_services/mss_sys_services.o
-                               0xe79a (size before relaxing)
- .debug_str     0x0000f4db      0xa1f ./drivers/mss_spi/mss_spi.o
-                               0xd305 (size before relaxing)
- .debug_str     0x0000fefa      0x828 ./drivers/mss_rtc/mss_rtc.o
-                               0xcf44 (size before relaxing)
- .debug_str     0x00010722      0xd4a ./drivers/mss_nvm/mss_nvm.o
-                               0xa469 (size before relaxing)
- .debug_str     0x0001146c      0x754 ./drivers/mss_hpdma/mss_hpdma.o
-                               0xa3bc (size before relaxing)
- .debug_str     0x00011bc0      0xf25 ./drivers/CoreUARTapb/core_uart_apb.o
-                               0x4913 (size before relaxing)
- .debug_str     0x00012ae5     0x115d ./drivers/CoreSPI/core_spi.o
-                               0x81f2 (size before relaxing)
- .debug_str     0x00013c42      0xe48 ./drivers/CorePWM/core_pwm.o
-                               0x4f84 (size before relaxing)
- .debug_str     0x00014a8a      0xfe2 ./drivers/CoreI2C/core_i2c.o
-                               0x7d54 (size before relaxing)
- .debug_str     0x00015a6c       0x42 ./drivers/CoreI2C/i2c_interrupt.o
-                               0x4457 (size before relaxing)
- .debug_str     0x00015aae      0x996 ./drivers/CoreGPIO/core_gpio.o
-                               0x4ac8 (size before relaxing)
- .debug_str     0x00016444      0x4ee ./CMSIS/system_m2sxxx.o
-                               0x9988 (size before relaxing)
- .debug_str     0x00016932       0x38 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
-                               0x2575 (size before relaxing)
- .debug_str     0x0001696a     0x16da ./main.o
-                               0xf09e (size before relaxing)
+ .debug_str     0x00000000     0x3611 ./src/MCP3909.o
+                               0x38fe (size before relaxing)
+ .debug_str     0x00003611       0xbb ./src/demo.o
+                               0x37e8 (size before relaxing)
+ .debug_str     0x000036cc      0x5db ./hal/CortexM3/cortex_nvic.o
+                               0x3a4d (size before relaxing)
+ .debug_str     0x00003ca7     0x58a9 ./drivers_config/sys_config/sys_config.o
+                               0x8ce2 (size before relaxing)
+ .debug_str     0x00009550      0xa1d ./drivers/mss_sys_services/mss_comblk.o
+                               0x9aab (size before relaxing)
+ .debug_str     0x00009f6d     0x5577 ./drivers/mss_sys_services/mss_sys_services.o
+                               0xe7a3 (size before relaxing)
+ .debug_str     0x0000f4e4      0xa1f ./drivers/mss_spi/mss_spi.o
+                               0xd30e (size before relaxing)
+ .debug_str     0x0000ff03      0x828 ./drivers/mss_rtc/mss_rtc.o
+                               0xcf4d (size before relaxing)
+ .debug_str     0x0001072b      0xd4a ./drivers/mss_nvm/mss_nvm.o
+                               0xa472 (size before relaxing)
+ .debug_str     0x00011475      0x754 ./drivers/mss_hpdma/mss_hpdma.o
+                               0xa3c5 (size before relaxing)
+ .debug_str     0x00011bc9      0xf25 ./drivers/CoreUARTapb/core_uart_apb.o
+                               0x491c (size before relaxing)
+ .debug_str     0x00012aee     0x115d ./drivers/CoreSPI/core_spi.o
+                               0x81fb (size before relaxing)
+ .debug_str     0x00013c4b      0xe48 ./drivers/CorePWM/core_pwm.o
+                               0x4f8d (size before relaxing)
+ .debug_str     0x00014a93      0xfe2 ./drivers/CoreI2C/core_i2c.o
+                               0x7d5d (size before relaxing)
+ .debug_str     0x00015a75       0x42 ./drivers/CoreI2C/i2c_interrupt.o
+                               0x4460 (size before relaxing)
+ .debug_str     0x00015ab7      0x996 ./drivers/CoreGPIO/core_gpio.o
+                               0x4ad1 (size before relaxing)
+ .debug_str     0x0001644d      0x4ee ./CMSIS/system_m2sxxx.o
+                               0x9991 (size before relaxing)
+ .debug_str     0x0001693b       0x38 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+                               0x257e (size before relaxing)
+ .debug_str     0x00016973     0x16da ./main.o
+                               0xf0a7 (size before relaxing)
 
 .debug_loc
  *(.debug_loc)

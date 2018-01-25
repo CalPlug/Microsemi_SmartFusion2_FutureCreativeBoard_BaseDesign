@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)</text>
-<text>Date: Wed Jan 24 22:44:17 2018
+<text>Date: Thu Jan 25 06:56:20 2018
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\SF2_MSS_sys.edn</cell>
+ <cell>C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\SF2_MSS_sys.edn</cell>
 </row>
 </table>
 <section><name>Options</name></section>

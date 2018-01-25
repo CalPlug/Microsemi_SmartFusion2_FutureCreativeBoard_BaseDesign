@@ -1,4 +1,4 @@
-INFO: Reading User SDC file C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\constraint\SF2_MSS_sys_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\constraint\SF2_MSS_sys_derived_constraints.sdc.
 
 ***** Place and Route Configurations *****
 Timing-driven            : ON
@@ -9,43 +9,43 @@ Incremental              : OFF
 Inter-clock optimization : ON
 TDPR scenario            : place_and_route
 
-INFO: Reading User PDC file C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 25 fixed I/O macros, 12 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
 
 Placer V4.0 - 11.8.2 
-Design: SF2_MSS_sys                     Started: Wed Jan 24 22:48:19 2018
+Design: SF2_MSS_sys                     Started: Thu Jan 25 06:58:53 2018
 
 Initializing Timing-Driven Placement ...
 Placing design...
 End of placement.
-Pre-Placement Runtime        : 8 seconds
+Pre-Placement Runtime        : 7 seconds
 Placement Runtime            : 43 seconds
 
 Placer completed successfully.
 
 Design: SF2_MSS_sys                     
-Finished: Wed Jan 24 22:49:51 2018
-Total CPU Time:     00:01:22            Total Elapsed Time: 00:01:32
-Total Memory Usage: 373.1 Mbytes
+Finished: Thu Jan 25 07:00:22 2018
+Total CPU Time:     00:01:25            Total Elapsed Time: 00:01:29
+Total Memory Usage: 373.3 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sysStarted: Wed Jan 24 22:50:01 2018
+Design: C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sysStarted: Thu Jan 25 07:00:32 2018
 
-Final stats: search run time 16.602212
+Final stats: search run time 20.431718
 
 Router completed successfully.
 
-Design: C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys
-Finished: Wed Jan 24 22:50:41 2018
-Total CPU Time:     00:00:36            Total Elapsed Time: 00:00:40
-Total Memory Usage: 997.3 Mbytes
+Design: C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys
+Finished: Thu Jan 25 07:01:16 2018
+Total CPU Time:     00:00:42            Total Elapsed Time: 00:00:44
+Total Memory Usage: 998.8 Mbytes
                         o - o - o - o - o - o
 
 Info: Iteration 1:
