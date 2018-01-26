@@ -12,7 +12,7 @@ spi_instance_t g_core_spi0;
 
 //**************************************************************************************************
 //Debugging Control     NOTE: Comment out on production eNVM builds to avoid Semihosting errors!!  (There is no target for the debug messages when running without a console)
-#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - do not go too crazy with Semihosting, it will slow down operation if used excessively.
+//#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - do not go too crazy with Semihosting, it will slow down operation if used excessively.
 //**************************************************************************************************
 #ifdef VERBOSEDEBUGCONSOLE
 	   extern void initialise_monitor_handles(void); //ARM Semihosting enabled
@@ -143,9 +143,11 @@ int main( void )
 /**************************************************************************
 * Initialize communication components of application
 *************************************************************************/
-        //Initialize MCP3903
+        //Initialize SPI for MCP3903
 	    	SPI_init(&g_core_spi0, CORE_SPI0_BASE_ADDR,8);//for LCD
 	    	SPI_configure_master_mode(&g_core_spi0);
+
+	    //Initialize MCP3903 Communication
 	    	MCP3903ResetOSR(OSR_256, &g_core_spi0);   //Send with OSR256 constant (value of 0x3, see library)
 	        MCP3903SetGain(1,GAIN_8, &g_core_spi0);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
 
