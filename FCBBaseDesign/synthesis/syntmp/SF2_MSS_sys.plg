@@ -1,9 +1,9 @@
-@P:  Worst Slack : 2.043
-@P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Estimated Frequency : 81.7 MHz
+@P:  Worst Slack : 2.152
+@P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Estimated Frequency : 82.4 MHz
 @P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Requested Frequency : 70.0 MHz
-@P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Estimated Period : 12.243
+@P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Estimated Period : 12.133
 @P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Requested Period : 14.286
-@P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Slack : 2.043
+@P:  SF2_MSS_sys_sb_0/CCC_0/GL0 - Slack : 2.152
 @P:  SF2_MSS_sys_sb_0/CCC_0/GL1 - Estimated Frequency : 3.4 MHz
 @P:  SF2_MSS_sys_sb_0/CCC_0/GL1 - Requested Frequency : 1.0 MHz
 @P:  SF2_MSS_sys_sb_0/CCC_0/GL1 - Estimated Period : 295.855
@@ -29,4 +29,4 @@
 @P: SF2_MSS_sys DSP Blocks  : 0
 @P: SF2_MSS_sys I/O primitives : 37
 @P: SF2_MSS_sys RAM64x18 :  5
-@P:  CPU Time : 0h:00m:10s
+@P:  CPU Time : 0h:00m:11s

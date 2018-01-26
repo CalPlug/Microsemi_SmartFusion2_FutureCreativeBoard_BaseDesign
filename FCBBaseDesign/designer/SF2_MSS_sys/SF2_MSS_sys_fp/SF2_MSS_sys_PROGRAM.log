@@ -27,10 +27,10 @@ programmer 'E200108CTE' : device 'M2S025' : EXPORT Restore user FREQRNG setting 
 programmer 'E200108CTE' : device 'M2S025' : ===================================================================================
 programmer 'E200108CTE' : device 'M2S025' : EXPORT DSN[128] = 39a5e38371c764908909ecd97e168a6a
 programmer 'E200108CTE' : device 'M2S025' : ===================================================================================
-programmer 'E200108CTE' : device 'M2S025' : Finished: Thu Jan 25 17:47:45 2018 (Elapsed time 00:00:03)
+programmer 'E200108CTE' : device 'M2S025' : Finished: Fri Jan 26 13:01:51 2018 (Elapsed time 00:00:04)
 programmer 'E200108CTE' : device 'M2S025' : Executing action PROGRAM PASSED.
 programmer 'E200108CTE' : Chain programming PASSED.
-Chain Programming Finished: Thu Jan 25 17:47:45 2018 (Elapsed time 00:00:03)
+Chain Programming Finished: Fri Jan 26 13:01:51 2018 (Elapsed time 00:00:04)
 
                         o - o - o - o - o - o
 

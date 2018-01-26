@@ -11,7 +11,7 @@ University of California, Irvine
  */
 
 #include "MCP3903.h"
-spi_instance_t g_core_spi0; //Core SPI 0 Instance to interface with the MCP3903 ADC
+//call spi_instance_t g_core_spi0 in main function before use //Core SPI 0 Instance to interface with the MCP3903 ADC
 
 
 //set to 24 bit mode
@@ -37,7 +37,7 @@ void MCP3903ResetOSR(byte osr, spi_instance_t * this_spi)
 
 //read from specified register
 //returns 24 bit data
-unsigned long MCP3903ReadRegister(byte reg,spi_instance_t * this_spi)
+unsigned long MCP3903ReadRegister(byte reg, spi_instance_t * this_spi)
 {
 	byte cmdByte = DEVICE_ADDR | reg <<1 | 1;
 	unsigned long r = 0;

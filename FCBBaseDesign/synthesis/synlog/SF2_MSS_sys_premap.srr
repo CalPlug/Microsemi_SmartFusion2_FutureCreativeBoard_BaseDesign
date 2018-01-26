@@ -1,4 +1,4 @@
-# Thu Jan 25 17:37:08 2018
+# Fri Jan 26 12:47:52 2018
 
 Synopsys Generic Technology Pre-mapping, Version map201609actrcp1, Build 005R, Built Jan 25 2017 01:01:33
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -140,7 +140,7 @@ spi_chanctrl|un1_resetn_rx_inferred_clock             100.0 MHz     10.000      
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\SF2_MSS_sys.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 144MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 144MB)
 
 Encoding state machine fsmmod[0:6] (in view: corei2c_lib.COREI2C_COREI2CREAL(rtl))
 original code -> new code
@@ -213,6 +213,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 57MB peak: 145MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Jan 25 17:37:09 2018
+# Fri Jan 26 12:47:53 2018
 
 ###########################################################]

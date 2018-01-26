@@ -192,7 +192,6 @@ set_io SPISDI1          \
     -iostd LVCMOS33    \
     -DIRECTION INPUT
 
-
 set_io SPISDO1           \
     -pinname R13        \
     -fixed yes         \
@@ -205,9 +204,8 @@ set_io SPISCLK1          \
     -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
-
 set_io SPISS1            \
-    -pinname P13        \
+    -pinname R11        \
     -fixed yes         \
     -iostd LVCMOS33    \
     -OUT_DRIVE 16      \

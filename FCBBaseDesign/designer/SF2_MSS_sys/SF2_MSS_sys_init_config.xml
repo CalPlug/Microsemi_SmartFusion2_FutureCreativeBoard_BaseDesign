@@ -3,7 +3,7 @@
 <doc>
 <title>Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)</text>
-<text>Date: Thu Jan 25 17:46:15 2018
+<text>Date: Fri Jan 26 13:00:19 2018
 </text>
 <section><name>SF2_MSS_sys_sb_0/CCC_0/CCC_INST/INST_CCC_IP</name></section>
 <table>

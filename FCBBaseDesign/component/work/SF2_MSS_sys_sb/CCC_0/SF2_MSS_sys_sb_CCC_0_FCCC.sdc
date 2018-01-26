@@ -1,6 +1,6 @@
 set_component SF2_MSS_sys_sb_CCC_0_FCCC
 # Microsemi Corp.
-# Date: 2018-Jan-24 22:41:03
+# Date: 2018-Jan-26 12:46:45
 #
 
 create_clock -period 20 [ get_pins { CCC_INST/RCOSC_25_50MHZ } ]

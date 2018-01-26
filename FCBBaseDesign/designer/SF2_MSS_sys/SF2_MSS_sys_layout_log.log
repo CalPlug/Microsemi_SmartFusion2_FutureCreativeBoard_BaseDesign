@@ -15,37 +15,37 @@ Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 25 fixed I/O macros, 12 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 1 seconds
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V4.0 - 11.8.2 
-Design: SF2_MSS_sys                     Started: Thu Jan 25 17:37:57 2018
+Design: SF2_MSS_sys                     Started: Fri Jan 26 12:56:09 2018
 
 Initializing Timing-Driven Placement ...
 Placing design...
 End of placement.
-Pre-Placement Runtime        : 5 seconds
-Placement Runtime            : 28 seconds
+Pre-Placement Runtime        : 6 seconds
+Placement Runtime            : 26 seconds
 
 Placer completed successfully.
 
 Design: SF2_MSS_sys                     
-Finished: Thu Jan 25 17:39:01 2018
-Total CPU Time:     00:00:57            Total Elapsed Time: 00:01:04
-Total Memory Usage: 373.1 Mbytes
+Finished: Fri Jan 26 12:57:12 2018
+Total CPU Time:     00:00:56            Total Elapsed Time: 00:01:03
+Total Memory Usage: 371.9 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sysStarted: Thu Jan 25 17:39:09 2018
+Design: C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sysStarted: Fri Jan 26 12:57:18 2018
 
-Final stats: search run time 12.256156
+Final stats: search run time 11.501729
 
 Router completed successfully.
 
 Design: C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys
-Finished: Thu Jan 25 17:39:46 2018
-Total CPU Time:     00:00:24            Total Elapsed Time: 00:00:37
-Total Memory Usage: 997.9 Mbytes
+Finished: Fri Jan 26 12:57:45 2018
+Total CPU Time:     00:00:25            Total Elapsed Time: 00:00:27
+Total Memory Usage: 997.8 Mbytes
                         o - o - o - o - o - o
 
 Info: Iteration 1:
@@ -55,9 +55,9 @@ Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 1918 | 27696 | 6.93       |
+| 4LUT          | 1917 | 27696 | 6.92       |
 | DFF           | 1092 | 27696 | 3.94       |
 | I/O Register  | 0    | 408   | 0.00       |
-| Logic Element | 2072 | 27696 | 7.48       |
+| Logic Element | 2081 | 27696 | 7.51       |
 +---------------+------+-------+------------+
 

@@ -19,8 +19,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>SF2_MSS_sys</data>
 <data>912</data>
-<data>1211</data>
-<data>499</data>
+<data>1214</data>
+<data>495</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -30,8 +30,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>SF2_MSS_sys_sb</data>
 <data>912</data>
-<data>1211</data>
-<data>499</data>
+<data>1214</data>
+<data>495</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -41,7 +41,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreAPB3</data>
 <data>0</data>
-<data>47</data>
+<data>35</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -52,7 +52,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAPB3_MUXPTOB3</data>
 <data>0</data>
-<data>40</data>
+<data>30</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -65,7 +65,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreGPIO</data>
 <data>45</data>
-<data>122</data>
+<data>118</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -101,7 +101,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>SF2_MSS_sys_sb_COREI2C_0_COREI2C</data>
 <data>119</data>
-<data>349</data>
+<data>365</data>
 <data>10</data>
 <data>0</data>
 <data>0</data>
@@ -112,7 +112,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREI2C_COREI2CREAL</data>
 <data>111</data>
-<data>344</data>
+<data>361</data>
 <data>10</data>
 <data>0</data>
 <data>0</data>
@@ -125,7 +125,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb</data>
 <data>171</data>
-<data>210</data>
+<data>209</data>
 <data>19</data>
 <data>0</data>
 <data>0</data>
@@ -136,7 +136,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>SF2_MSS_sys_sb_CoreUARTapb_0_COREUART</data>
 <data>147</data>
-<data>170</data>
+<data>171</data>
 <data>19</data>
 <data>0</data>
 <data>0</data>
@@ -305,8 +305,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>corepwm</data>
 <data>377</data>
-<data>187</data>
-<data>430</data>
+<data>186</data>
+<data>426</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -328,8 +328,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>corepwm_reg_if</data>
 <data>329</data>
-<data>128</data>
-<data>166</data>
+<data>127</data>
+<data>162</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -353,7 +353,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>corespi</data>
 <data>191</data>
-<data>286</data>
+<data>291</data>
 <data>40</data>
 <data>0</data>
 <data>0</data>
@@ -364,7 +364,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi</data>
 <data>191</data>
-<data>286</data>
+<data>291</data>
 <data>40</data>
 <data>0</data>
 <data>0</data>
@@ -375,7 +375,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_chanctrl</data>
 <data>120</data>
-<data>137</data>
+<data>131</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
@@ -399,7 +399,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_control</data>
 <data>0</data>
-<data>9</data>
+<data>10</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -411,7 +411,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_fifo_0</data>
 <data>18</data>
-<data>24</data>
+<data>37</data>
 <data>13</data>
 <data>0</data>
 <data>0</data>
@@ -423,7 +423,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_fifo_1</data>
 <data>18</data>
-<data>36</data>
+<data>35</data>
 <data>13</data>
 <data>0</data>
 <data>0</data>
@@ -435,7 +435,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_rf</data>
 <data>35</data>
-<data>53</data>
+<data>56</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>

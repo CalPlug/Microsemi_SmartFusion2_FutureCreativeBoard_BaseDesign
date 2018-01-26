@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Jan 24 22:42:56 2018
+-- Created by SmartDesign Fri Jan 26 12:14:47 2018
 -- Version: v11.8 SP2 11.8.2.4
 ----------------------------------------------------------------------
 
@@ -129,12 +129,12 @@ signal SPI_0_SS0_M2F_OE_net_1 : std_logic;
 signal TX_net_1               : std_logic;
 signal SPISCLK1_net_1         : std_logic;
 signal SPISS1_net_1           : std_logic;
-signal PWM_2_net_0            : std_logic_vector(7 downto 0);
-signal GPIO_OUT_0_net_0       : std_logic_vector(2 downto 0);
 signal SPISCLK0_net_1         : std_logic;
 signal SPISDO0_net_1          : std_logic;
 signal SPISS0_net_1           : std_logic;
 signal SPISDO1_net_1          : std_logic;
+signal PWM_2_net_0            : std_logic_vector(7 downto 0);
+signal GPIO_OUT_0_net_0       : std_logic_vector(2 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
@@ -170,10 +170,6 @@ begin
  SPISCLK1               <= SPISCLK1_net_1;
  SPISS1_net_1           <= SPISS1_net_0;
  SPISS1                 <= SPISS1_net_1;
- PWM_2_net_0            <= PWM_2;
- PWM(7 downto 0)        <= PWM_2_net_0;
- GPIO_OUT_0_net_0       <= GPIO_OUT_0;
- GPIO_OUT(2 downto 0)   <= GPIO_OUT_0_net_0;
  SPISCLK0_net_1         <= SPISCLK0_net_0;
  SPISCLK0               <= SPISCLK0_net_1;
  SPISDO0_net_1          <= SPISDO0_net_0;
@@ -182,6 +178,10 @@ begin
  SPISS0                 <= SPISS0_net_1;
  SPISDO1_net_1          <= SPISDO1_net_0;
  SPISDO1                <= SPISDO1_net_1;
+ PWM_2_net_0            <= PWM_2;
+ PWM(7 downto 0)        <= PWM_2_net_0;
+ GPIO_OUT_0_net_0       <= GPIO_OUT_0;
+ GPIO_OUT(2 downto 0)   <= GPIO_OUT_0_net_0;
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
@@ -196,8 +196,8 @@ SF2_MSS_sys_sb_0 : SF2_MSS_sys_sb
         SPI_0_SS0_F2M    => SPI_0_SS0_F2M,
         RX               => RX,
         SPISDI0          => SPISDI0,
-        GPIO_IN          => GPIO_IN,
         SPISDI1          => SPISDI1,
+        GPIO_IN          => GPIO_IN,
         -- Outputs
         POWER_ON_RESET_N => OPEN,
         INIT_DONE        => OPEN,
@@ -218,9 +218,9 @@ SF2_MSS_sys_sb_0 : SF2_MSS_sys_sb
         SPISS0           => SPISS0_net_0,
         SPISCLK1         => SPISCLK1_net_0,
         SPISS1           => SPISS1_net_0,
+        SPISDO1          => SPISDO1_net_0,
         PWM              => PWM_2,
         GPIO_OUT         => GPIO_OUT_0,
-        SPISDO1          => SPISDO1_net_0,
         -- Inouts
         SCL              => SCL,
         SDA              => SDA 

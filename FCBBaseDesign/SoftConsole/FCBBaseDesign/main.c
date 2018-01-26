@@ -42,7 +42,7 @@ gpio_instance_t g_gpio;
  * CoreI2C instance data.
  *****************************************************************************/
 
-#define COREI2C_BASE_ADDR         0x30003000UL
+#define COREI2C_BASE_ADDR         0x50003000UL  //0x30003000UL?
 i2c_instance_t g_core_I2C0;
 
 /******************************************************************************
@@ -56,7 +56,7 @@ uint32_t duty_cycle = 1;  //Set PWM initial duty cycle
 /******************************************************************************
  * CoreSPI instance data.
  *****************************************************************************/
-#define CORE_SPI0_BASE_ADDR	0x50004000
+#define CORE_SPI0_BASE_ADDR	0x50004000   //0x30004000?
 spi_instance_t g_core_spi0;
 
 /******************************************************************************
@@ -148,13 +148,13 @@ int main( void )
 /**************************************************************************
 * Initialize communication components of application
 *************************************************************************/
-        //Initialize SPI for MCP3903
+        //Initialize CoreSPI
 	    	SPI_init(&g_core_spi0, CORE_SPI0_BASE_ADDR,8); //Initialize SPI
-	    	SPI_configure_master_mode(&g_core_spi0);  //Initialize SPI
+	    	SPI_configure_master_mode(&g_core_spi0);  //Initialize SPI as master
 
 	    //Initialize MCP3903 Communication
 	    	MCP3903ResetOSR(OSR_256, &g_core_spi0);   //Send with OSR256 constant (value of 0x3, see library)
-	        MCP3903SetGain(1,GAIN_8, &g_core_spi0);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
+	        MCP3903SetGain(1, GAIN_8, &g_core_spi0);   //Set ADC channel 1 with gain of 8 (value of 0x3, see library)
 
 		//Initialize UART RX buffer
 		uint8_t rx_data[MAX_RX_DATA_SIZE]={0}; //initialize buffer as all 0's
