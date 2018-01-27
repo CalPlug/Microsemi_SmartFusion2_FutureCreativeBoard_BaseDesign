@@ -22,9 +22,9 @@ University of California, Irvine
 #include "drivers\CoreSPI\core_spi.h"
 
 //Define non-standard C variable types for this scope
-typedef unsigned char byte; //define "byte" using char - char is defined as 1 byte
-typedef __uint32_t uint32_t ; //Define uint32_t for this scope
-typedef __uint8_t uint8_t ; //Define uint8_t for this scope
+typedef uint8_t byte; //define "byte" using char - char is defined as 1 byte
+//typedef __uint32_t uint32_t ; //Define uint32_t for this scope
+//typedef __uint8_t uint8_t ; //Define uint8_t for this scope
 
 //**** Pin Assignments for microcontroller Interface
 //historic Arduino Pins, now unused
@@ -188,7 +188,7 @@ typedef __uint8_t uint8_t ; //Define uint8_t for this scope
 // Function Routines
 	void MCP3903Reset24(spi_instance_t * this_spi);
 	void MCP3903ResetOSR(byte osr, spi_instance_t * this_spi);
-	unsigned long MCP3903ReadRegister(byte reg, spi_instance_t * this_spi);
+	uint32_t MCP3903ReadRegister(byte reg, spi_instance_t * this_spi);
 	void MCP3903WriteRegister(byte reg, unsigned long data, spi_instance_t * this_spi);
 	unsigned long readControlRegister(spi_instance_t * this_spi);
 	unsigned long readStatusCommRegister(spi_instance_t * this_spi);

@@ -10,7 +10,8 @@ entity SF2_MSS_sys_sb_CCC_0_FCCC is
     port( RCOSC_25_50MHZ : in    std_logic;
           LOCK           : out   std_logic;
           GL0            : out   std_logic;
-          GL1            : out   std_logic
+          GL1            : out   std_logic;
+          GL2            : out   std_logic
         );
 
 end SF2_MSS_sys_sb_CCC_0_FCCC;
@@ -89,7 +90,8 @@ architecture DEF_ARCH of SF2_MSS_sys_sb_CCC_0_FCCC is
         );
   end component;
 
-    signal gnd_net, vcc_net, GL0_net, GL1_net : std_logic;
+    signal gnd_net, vcc_net, GL0_net, GL1_net, GL2_net
+         : std_logic;
     signal nc8, nc7, nc6, nc2, nc5, nc4, nc3, nc1 : std_logic;
 
 begin 
@@ -104,12 +106,15 @@ begin
     gnd_inst : GND
       port map(Y => gnd_net);
     
+    GL2_INST : CLKINT
+      port map(A => GL2_net, Y => GL2);
+    
     GL0_INST : CLKINT
       port map(A => GL0_net, Y => GL0);
     
     CCC_INST : CCC
 
-              generic map(INIT => "00" & x"000007FA8000044D74000F18C6308C271839DEC0404051800604",
+              generic map(INIT => "00" & x"000007FA8000044974001F18C2B09C230739DEC048E300800D04",
          VCOFREQUENCY => 560.000)
 
       port map(Y0 => OPEN, Y1 => OPEN, Y2 => OPEN, Y3 => OPEN, 
@@ -136,8 +141,8 @@ begin
         PWDATA(1) => vcc_net, PWDATA(0) => vcc_net, CLK0_PAD => 
         gnd_net, CLK1_PAD => gnd_net, CLK2_PAD => gnd_net, 
         CLK3_PAD => gnd_net, GL0 => GL0_net, GL1 => GL1_net, GL2
-         => OPEN, GL3 => OPEN, RCOSC_25_50MHZ => RCOSC_25_50MHZ, 
-        RCOSC_1MHZ => gnd_net, XTLOSC => gnd_net);
+         => GL2_net, GL3 => OPEN, RCOSC_25_50MHZ => 
+        RCOSC_25_50MHZ, RCOSC_1MHZ => gnd_net, XTLOSC => gnd_net);
     
 
 end DEF_ARCH; 

@@ -37,9 +37,9 @@ void MCP3903ResetOSR(byte osr, spi_instance_t * this_spi)
 
 //read from specified register
 //returns 24 bit data
-unsigned long MCP3903ReadRegister(byte reg, spi_instance_t * this_spi)
+uint32_t MCP3903ReadRegister(byte reg, spi_instance_t * this_spi)
 {
-	byte cmdByte = DEVICE_ADDR | reg <<1 | 1;
+	/*byte cmdByte = DEVICE_ADDR | reg <<1 | 1;
 	unsigned long r = 0;
     unsigned long buffer = 0;
 	SPI_set_slave_select( this_spi, SPI_SLAVE_0) ;  //Set CS low to start communication (bring low to start)
@@ -47,8 +47,11 @@ unsigned long MCP3903ReadRegister(byte reg, spi_instance_t * this_spi)
 	r = (unsigned long) SPI_transfer_frame(this_spi,0x0) << 16;
 	r |= (unsigned long) SPI_transfer_frame(this_spi,0x0) << 8;
 	r |= (unsigned long) SPI_transfer_frame(this_spi,0x0);
-	SPI_clear_slave_select( this_spi, SPI_SLAVE_0 ); //clear slave select line  (intend to bring high to end)
-
+	SPI_clear_slave_select( this_spi, SPI_SLAVE_0 ); //clear slave select line  (intend to bring high to end)*/
+	uint32_t r = 0;
+	SPI_set_slave_select( this_spi, SPI_SLAVE_0) ;
+	r = SPI_transfer_frame(this_spi,0x43000000);
+	SPI_clear_slave_select( this_spi, SPI_SLAVE_0 );
 	return r;
 }
 
@@ -72,7 +75,7 @@ void MCP3903WriteRegister(byte reg, unsigned long data, spi_instance_t * this_sp
 //read from ADC channel (0-5)
 double MCP3903ReadADC(byte channel, spi_instance_t * this_spi)
 {
-	unsigned long r = MCP3903ReadRegister(channel, this_spi);
+	uint32_t r = MCP3903ReadRegister(channel, this_spi);
 
 	if (r > 8388607l) r -= 16777216l;
 

@@ -1,8 +1,8 @@
 Software Version: 11.8.2.4
-Opened 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
+Opened 'C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
 The 'open_project' command succeeded.
-PDB file 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\e7f8ece6-6c02-4e50-ac02-6e506c026e50.pdb' has been loaded successfully.
-DESIGN : SF2_MSS_sys;  CHECKSUM : 0000;  PDB_VERSION : 1.9
+PDB file 'C:\Users\REN\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\designer\SF2_MSS_sys\d606f6a3-8b66-4c71-8b66-ac718b66ac71.pdb' has been loaded successfully.
+DESIGN : SF2_MSS_sys;  CHECKSUM : 0135;  PDB_VERSION : 1.9
 The 'load_programming_data' command succeeded.
 The 'set_programming_file' command succeeded.
 Project saved.

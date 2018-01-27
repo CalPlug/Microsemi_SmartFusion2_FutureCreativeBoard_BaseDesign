@@ -8,7 +8,7 @@
 </header>
 <row>
  <cell>Date:</cell>
- <cell>Fri Jan 26 12:46:44 2018</cell>
+ <cell>Fri Jan 26 15:48:23 2018</cell>
 </row>
 <separator/>
 <row>
@@ -49,20 +49,30 @@
  <cell>GL0</cell>
  <cell>primary clock</cell>
  <cell>PLL (0)</cell>
+ <cell>140 MHz</cell>
  <cell>70 MHz</cell>
  <cell>70 MHz</cell>
- <cell>70 MHz</cell>
- <cell>1 (GPD1)</cell>
+ <cell>2 (GPD0)</cell>
 </row>
 <separator/>
 <row>
  <cell>GL1</cell>
  <cell>primary clock</cell>
  <cell>PLL (0)</cell>
- <cell>70 MHz</cell>
+ <cell>140 MHz</cell>
  <cell>1 MHz</cell>
  <cell>1 MHz</cell>
- <cell>70 (GPD0)</cell>
+ <cell>140 (GPD1)</cell>
+</row>
+<separator/>
+<row>
+ <cell>GL2</cell>
+ <cell>primary clock</cell>
+ <cell>PLL (0)</cell>
+ <cell>140 MHz</cell>
+ <cell>4 MHz</cell>
+ <cell>4 MHz</cell>
+ <cell>35 (GPD2)</cell>
 </row>
 <separator/>
 </table>
@@ -82,7 +92,7 @@
 </row>
 <row>
  <cell>Output frequency</cell>
- <cell>70 MHz</cell>
+ <cell>140 MHz</cell>
 </row>
 <row>
  <cell>VCO frequency</cell>
@@ -108,7 +118,7 @@
 </row>
 <row>
  <cell>CCC feedback divider</cell>
- <cell>7</cell>
+ <cell>14</cell>
 </row>
 <row>
  <cell>External feedback divider</cell>
@@ -117,7 +127,7 @@
 <separator/>
 <row>
  <cell>PLL VCO divider</cell>
- <cell>8</cell>
+ <cell>4</cell>
 </row>
 <separator/>
 <row>
@@ -183,7 +193,7 @@
 <row>
  <cell>FCCC_FBDIV_CR0</cell>
  <cell>0x04</cell>
- <cell>0x06</cell>
+ <cell>0x0d</cell>
  <cell>FBDIV configuration register 0</cell>
 </row>
 <row>
@@ -195,7 +205,7 @@
 <row>
  <cell>FCCC_NGMUX0_CR0</cell>
  <cell>0x06</cell>
- <cell>0x09</cell>
+ <cell>0x08</cell>
  <cell>NGMUX0 configuration register 0</cell>
 </row>
 <row>
@@ -207,7 +217,7 @@
 <row>
  <cell>FCCC_NGMUX1_CR0</cell>
  <cell>0x08</cell>
- <cell>0x08</cell>
+ <cell>0x09</cell>
  <cell>NGMUX1 configuration register 0</cell>
 </row>
 <row>
@@ -219,7 +229,7 @@
 <row>
  <cell>FCCC_NGMUX2_CR0</cell>
  <cell>0x0a</cell>
- <cell>0x18</cell>
+ <cell>0x0a</cell>
  <cell>NGMUX2 configuration register 0</cell>
 </row>
 <row>
@@ -255,7 +265,7 @@
 <row>
  <cell>FCCC_GPMUX2_CR</cell>
  <cell>0x10</cell>
- <cell>0x58</cell>
+ <cell>0x47</cell>
  <cell>GPMUX2 configuration register</cell>
 </row>
 <row>
@@ -267,19 +277,19 @@
 <row>
  <cell>FCCC_GPD0_CR</cell>
  <cell>0x12</cell>
- <cell>0x46</cell>
+ <cell>0x02</cell>
  <cell>GPD0 configuration register</cell>
 </row>
 <row>
  <cell>FCCC_GPD1_CR</cell>
  <cell>0x13</cell>
- <cell>0x01</cell>
+ <cell>0x8c</cell>
  <cell>GPD1 configuration register</cell>
 </row>
 <row>
  <cell>FCCC_GPD2_CR</cell>
  <cell>0x14</cell>
- <cell>0x01</cell>
+ <cell>0x23</cell>
  <cell>GPD2 configuration register</cell>
 </row>
 <row>
@@ -339,7 +349,7 @@
 <row>
  <cell>FCCC_PLL_CR7</cell>
  <cell>0x1e</cell>
- <cell>0x03</cell>
+ <cell>0x02</cell>
  <cell>PLL&apos;s internal output divider configuration register</cell>
 </row>
 <row>
@@ -375,7 +385,7 @@
 <row>
  <cell>FCCC_GPD2_SYNC_CR</cell>
  <cell>0x24</cell>
- <cell>0x02</cell>
+ <cell>0x03</cell>
  <cell>GPD2 operating mode configuration register</cell>
 </row>
 <row>

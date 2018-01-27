@@ -212,6 +212,20 @@ set_io SPISS1            \
     -DIRECTION OUTPUT   \
 
 
+set_io ADC_CLK            \
+    -pinname F4        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION OUTPUT   \
+
+set_io ADC_RST            \
+    -pinname G5        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 16      \
+    -DIRECTION OUTPUT   \
+
 # Dedicated Peripheral I/O Settings
 # 
 

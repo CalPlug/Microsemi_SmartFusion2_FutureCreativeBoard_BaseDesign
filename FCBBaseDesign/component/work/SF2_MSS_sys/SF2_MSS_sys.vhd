@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Fri Jan 26 12:14:47 2018
+-- Created by SmartDesign Fri Jan 26 15:48:46 2018
 -- Version: v11.8 SP2 11.8.2.4
 ----------------------------------------------------------------------
 
@@ -27,6 +27,8 @@ entity SF2_MSS_sys is
         SPI_0_DI_F2M     : in    std_logic;
         SPI_0_SS0_F2M    : in    std_logic;
         -- Outputs
+        ADC_CLK          : out   std_logic;
+        ADC_RST          : out   std_logic;
         GPIO_OUT         : out   std_logic_vector(2 downto 0);
         PWM              : out   std_logic_vector(7 downto 0);
         SPISCLK0         : out   std_logic;
@@ -71,6 +73,8 @@ component SF2_MSS_sys_sb
         SPI_0_DI_F2M     : in    std_logic;
         SPI_0_SS0_F2M    : in    std_logic;
         -- Outputs
+        ADC_CLK          : out   std_logic;
+        ADC_RST          : out   std_logic;
         FAB_CCC_GL0      : out   std_logic;
         FAB_CCC_LOCK     : out   std_logic;
         GPIO_OUT         : out   std_logic_vector(2 downto 0);
@@ -101,6 +105,8 @@ end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
+signal ADC_CLK_net_0          : std_logic;
+signal ADC_RST_0              : std_logic;
 signal GPIO_OUT_0             : std_logic_vector(2 downto 0);
 signal PWM_2                  : std_logic_vector(7 downto 0);
 signal SPI_0_CLK_M2F_net_0    : std_logic;
@@ -135,6 +141,8 @@ signal SPISS0_net_1           : std_logic;
 signal SPISDO1_net_1          : std_logic;
 signal PWM_2_net_0            : std_logic_vector(7 downto 0);
 signal GPIO_OUT_0_net_0       : std_logic_vector(2 downto 0);
+signal ADC_CLK_net_1          : std_logic;
+signal ADC_RST_0_net_0        : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
@@ -182,6 +190,10 @@ begin
  PWM(7 downto 0)        <= PWM_2_net_0;
  GPIO_OUT_0_net_0       <= GPIO_OUT_0;
  GPIO_OUT(2 downto 0)   <= GPIO_OUT_0_net_0;
+ ADC_CLK_net_1          <= ADC_CLK_net_0;
+ ADC_CLK                <= ADC_CLK_net_1;
+ ADC_RST_0_net_0        <= ADC_RST_0;
+ ADC_RST                <= ADC_RST_0_net_0;
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
@@ -221,6 +233,8 @@ SF2_MSS_sys_sb_0 : SF2_MSS_sys_sb
         SPISDO1          => SPISDO1_net_0,
         PWM              => PWM_2,
         GPIO_OUT         => GPIO_OUT_0,
+        ADC_CLK          => ADC_CLK_net_0,
+        ADC_RST          => ADC_RST_0,
         -- Inouts
         SCL              => SCL,
         SDA              => SDA 

@@ -1,7 +1,7 @@
 # Microsemi Corp.
-# Date: 2018-Jan-26 12:58:13
+# Date: 2018-Jan-26 15:51:20
 # This file was generated based on the following SDC source files:
-#   C:/Users/calplug/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/constraint/SF2_MSS_sys_derived_constraints.sdc
+#   C:/Users/REN/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/constraint/SF2_MSS_sys_derived_constraints.sdc
 #
 
 create_clock -name {SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT} -period 20 [ get_pins { SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT } ]

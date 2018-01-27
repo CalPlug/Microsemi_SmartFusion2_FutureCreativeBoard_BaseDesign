@@ -3,7 +3,7 @@
 <doc>
 <text>SmartTime Version 11.8.2.4</text>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
-Date: Fri Jan 26 12:58:26 2018 </text>
+Date: Fri Jan 26 15:51:30 2018 </text>
 <table>
 <header>
 </header>
@@ -50,52 +50,52 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>         1576</cell>
+ <cell>         1842</cell>
  <cell>            7</cell>
- <cell>         1583</cell>
+ <cell>         1849</cell>
 </row>
 <row>
  <cell>Recovery</cell>
- <cell>          889</cell>
+ <cell>          987</cell>
  <cell>            6</cell>
- <cell>          895</cell>
+ <cell>          993</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           36</cell>
- <cell>           36</cell>
+ <cell>           38</cell>
+ <cell>           38</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>         2465</cell>
- <cell>           49</cell>
- <cell>         2514</cell>
+ <cell>         2829</cell>
+ <cell>           51</cell>
+ <cell>         2880</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>         1576</cell>
+ <cell>         1842</cell>
  <cell>            7</cell>
- <cell>         1583</cell>
+ <cell>         1849</cell>
 </row>
 <row>
  <cell>Removal</cell>
- <cell>          889</cell>
+ <cell>          987</cell>
  <cell>            6</cell>
- <cell>          895</cell>
+ <cell>          993</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           36</cell>
- <cell>           36</cell>
+ <cell>           38</cell>
+ <cell>           38</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>         2465</cell>
- <cell>           49</cell>
- <cell>         2514</cell>
+ <cell>         2829</cell>
+ <cell>           51</cell>
+ <cell>         2880</cell>
 </row>
 </table>
 <section>
@@ -111,15 +111,15 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>         1512</cell>
+ <cell>         1778</cell>
  <cell>            4</cell>
- <cell>         1516</cell>
+ <cell>         1782</cell>
 </row>
 <row>
  <cell>Recovery</cell>
- <cell>          849</cell>
+ <cell>          947</cell>
  <cell>            6</cell>
- <cell>          855</cell>
+ <cell>          953</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
@@ -129,22 +129,22 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>         2361</cell>
+ <cell>         2725</cell>
  <cell>           30</cell>
- <cell>         2391</cell>
+ <cell>         2755</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>         1512</cell>
+ <cell>         1778</cell>
  <cell>            4</cell>
- <cell>         1516</cell>
+ <cell>         1782</cell>
 </row>
 <row>
  <cell>Removal</cell>
- <cell>          849</cell>
+ <cell>          947</cell>
  <cell>            6</cell>
- <cell>          855</cell>
+ <cell>          953</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
@@ -154,9 +154,9 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>         2361</cell>
+ <cell>         2725</cell>
  <cell>           30</cell>
- <cell>         2391</cell>
+ <cell>         2755</cell>
 </row>
 </table>
 <section>
@@ -402,14 +402,14 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            1</cell>
+ <cell>            1</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            1</cell>
+ <cell>            1</cell>
 </row>
 <separator/>
 <row>
@@ -427,16 +427,34 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            1</cell>
+ <cell>            1</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            1</cell>
+ <cell>            1</cell>
 </row>
 </table>
+<section>
+<name>Enhancement Suggestions</name>
+<text></text>
+<text></text>
+<text> - Max output delay constraint missing on port:</text>
+<text>   </text>
+<list>
+ <item>ADC_CLK</item>
+</list>
+<text></text>
+<text> - Min output delay constraint missing on port:</text>
+<text>   </text>
+<list>
+ <item>ADC_CLK</item>
+</list>
+<text></text>
+<text></text>
+</section>
 </section>
 <section>
 <name>Clock domain: </name>
@@ -561,14 +579,14 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            8</cell>
- <cell>            8</cell>
+ <cell>            9</cell>
+ <cell>            9</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>            0</cell>
- <cell>            9</cell>
- <cell>            9</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <separator/>
 <row>
@@ -586,14 +604,14 @@ Date: Fri Jan 26 12:58:26 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            8</cell>
- <cell>            8</cell>
+ <cell>            9</cell>
+ <cell>            9</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>            0</cell>
- <cell>            9</cell>
- <cell>            9</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 </table>
 <section>
