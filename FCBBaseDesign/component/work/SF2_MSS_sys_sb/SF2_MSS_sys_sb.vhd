@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Fri Jan 26 15:48:30 2018
+-- Created by SmartDesign Sat Jan 27 17:12:16 2018
 -- Version: v11.8 SP2 11.8.2.4
 ----------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ entity SF2_MSS_sys_sb is
         -- Inputs
         DEVRST_N         : in    std_logic;
         FAB_RESET_N      : in    std_logic;
-        GPIO_IN          : in    std_logic_vector(2 downto 0);
+        GPIO_IN          : in    std_logic_vector(11 downto 0);
         RX               : in    std_logic;
         SPISDI0          : in    std_logic;
         SPISDI1          : in    std_logic;
@@ -48,11 +48,11 @@ entity SF2_MSS_sys_sb is
         ADC_RST          : out   std_logic;
         FAB_CCC_GL0      : out   std_logic;
         FAB_CCC_LOCK     : out   std_logic;
-        GPIO_OUT         : out   std_logic_vector(2 downto 0);
+        GPIO_OUT         : out   std_logic_vector(11 downto 0);
         INIT_DONE        : out   std_logic;
         MSS_READY        : out   std_logic;
         POWER_ON_RESET_N : out   std_logic;
-        PWM              : out   std_logic_vector(7 downto 0);
+        PWM              : out   std_logic_vector(2 downto 0);
         SPISCLK0         : out   std_logic;
         SPISCLK1         : out   std_logic;
         SPISDO0          : out   std_logic;
@@ -472,7 +472,7 @@ signal FAB_CCC_GL0_net_0                                  : std_logic;
 signal FAB_CCC_LOCK_net_0                                 : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_O2F                        : std_logic;
-signal GPIO_OUT_1                                         : std_logic_vector(2 downto 0);
+signal GPIO_OUT_1_0                                       : std_logic_vector(11 downto 0);
 signal INIT_DONE_net_0                                    : std_logic;
 signal IO_0_Y                                             : std_logic_vector(0 to 0);
 signal IO_1_Y                                             : std_logic_vector(0 to 0);
@@ -481,7 +481,7 @@ signal OR2_1_Y_0                                          : std_logic;
 signal OR3_0_Y                                            : std_logic;
 signal OR3_1_Y                                            : std_logic;
 signal POWER_ON_RESET_N_net_0                             : std_logic;
-signal PWM_1                                              : std_logic_vector(7 downto 0);
+signal PWM_0_0                                            : std_logic_vector(2 downto 0);
 signal SF2_MSS_sys_sb_MSS_TMP_0_FIC_0_APB_MASTER_PADDR    : std_logic_vector(31 downto 0);
 signal SF2_MSS_sys_sb_MSS_TMP_0_FIC_0_APB_MASTER_PENABLE  : std_logic;
 signal SF2_MSS_sys_sb_MSS_TMP_0_FIC_0_APB_MASTER_PRDATA   : std_logic_vector(31 downto 0);
@@ -524,9 +524,9 @@ signal SPISS0_net_1                                       : std_logic;
 signal SPISCLK0_net_2                                     : std_logic;
 signal SPISS0_net_2                                       : std_logic;
 signal SPISDO1_net_2                                      : std_logic;
-signal PWM_1_net_0                                        : std_logic_vector(7 downto 0);
-signal GPIO_OUT_1_net_0                                   : std_logic_vector(2 downto 0);
 signal ADC_CLK_net_1                                      : std_logic;
+signal PWM_0_0_net_0                                      : std_logic_vector(2 downto 0);
+signal GPIO_OUT_1_0_net_0                                 : std_logic_vector(11 downto 0);
 signal GPIO_OUT_slice_0                                   : std_logic_vector(0 to 0);
 signal GPIO_OUT_slice_1                                   : std_logic_vector(1 to 1);
 signal GPIO_OUT_slice_2                                   : std_logic_vector(2 to 2);
@@ -567,28 +567,28 @@ signal FIC_2_APB_M_PRDATA_const_net_0                     : std_logic_vector(31 
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
 ----------------------------------------------------------------------
-signal CoreAPB3_0_APBmslave0_PADDR_3_8to0                 : std_logic_vector(8 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_3                      : std_logic_vector(8 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_0_7to0                 : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_0                      : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_1_7to0                 : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_1                      : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR                        : std_logic_vector(31 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_4_6to0                 : std_logic_vector(6 downto 0);
-signal CoreAPB3_0_APBmslave0_PADDR_4                      : std_logic_vector(6 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_0_7to0                 : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_0                      : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_3_8to0                 : std_logic_vector(8 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_3                      : std_logic_vector(8 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_2_4to0                 : std_logic_vector(4 downto 0);
 signal CoreAPB3_0_APBmslave0_PADDR_2                      : std_logic_vector(4 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_4_6to0                 : std_logic_vector(6 downto 0);
+signal CoreAPB3_0_APBmslave0_PADDR_4                      : std_logic_vector(6 downto 0);
 
-signal CoreAPB3_0_APBmslave0_PRDATA                       : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PRDATA_0_31to16              : std_logic_vector(31 downto 16);
 signal CoreAPB3_0_APBmslave0_PRDATA_0_15to0               : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PRDATA_0                     : std_logic_vector(31 downto 0);
+signal CoreAPB3_0_APBmslave0_PRDATA                       : std_logic_vector(15 downto 0);
 
-signal CoreAPB3_0_APBmslave0_PWDATA_2_7to0                : std_logic_vector(7 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA_2                     : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA                       : std_logic_vector(31 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_0_15to0               : std_logic_vector(15 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_0                     : std_logic_vector(15 downto 0);
-signal CoreAPB3_0_APBmslave0_PWDATA                       : std_logic_vector(31 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_2_7to0                : std_logic_vector(7 downto 0);
+signal CoreAPB3_0_APBmslave0_PWDATA_2                     : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_1_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave0_PWDATA_1                     : std_logic_vector(7 downto 0);
 
@@ -597,10 +597,10 @@ signal CoreAPB3_0_APBmslave2_PRDATA_0_7to0                : std_logic_vector(7 d
 signal CoreAPB3_0_APBmslave2_PRDATA_0                     : std_logic_vector(31 downto 0);
 signal CoreAPB3_0_APBmslave2_PRDATA                       : std_logic_vector(7 downto 0);
 
-signal CoreAPB3_0_APBmslave3_PRDATA                       : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave3_PRDATA_0_31to8               : std_logic_vector(31 downto 8);
 signal CoreAPB3_0_APBmslave3_PRDATA_0_7to0                : std_logic_vector(7 downto 0);
 signal CoreAPB3_0_APBmslave3_PRDATA_0                     : std_logic_vector(31 downto 0);
+signal CoreAPB3_0_APBmslave3_PRDATA                       : std_logic_vector(7 downto 0);
 
 
 begin
@@ -676,19 +676,19 @@ begin
  SPISS1                 <= SPISS0_net_2;
  SPISDO1_net_2          <= SPISDO1_net_0;
  SPISDO1                <= SPISDO1_net_2;
- PWM_1_net_0            <= PWM_1;
- PWM(7 downto 0)        <= PWM_1_net_0;
- GPIO_OUT_1_net_0       <= GPIO_OUT_1;
- GPIO_OUT(2 downto 0)   <= GPIO_OUT_1_net_0;
  ADC_CLK_net_1          <= ADC_CLK_net_0;
  ADC_CLK                <= ADC_CLK_net_1;
+ PWM_0_0_net_0          <= PWM_0_0;
+ PWM(2 downto 0)        <= PWM_0_0_net_0;
+ GPIO_OUT_1_0_net_0     <= GPIO_OUT_1_0;
+ GPIO_OUT(11 downto 0)  <= GPIO_OUT_1_0_net_0;
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
  SPISS0_net_0(0)     <= SPISS_net_0(0);
- GPIO_OUT_slice_0(0) <= GPIO_OUT_1(0);
- GPIO_OUT_slice_1(1) <= GPIO_OUT_1(1);
- GPIO_OUT_slice_2(2) <= GPIO_OUT_1(2);
+ GPIO_OUT_slice_0(0) <= GPIO_OUT_1_0(0);
+ GPIO_OUT_slice_1(1) <= GPIO_OUT_1_0(1);
+ GPIO_OUT_slice_2(2) <= GPIO_OUT_1_0(2);
  SPISS_slice_0(1)    <= SPISS_net_0(1);
  SPISS_slice_1(2)    <= SPISS_net_0(2);
  SPISS_slice_2(3)    <= SPISS_net_0(3);
@@ -703,25 +703,25 @@ begin
 ----------------------------------------------------------------------
 -- Bus Interface Nets Assignments - Unequal Pin Widths
 ----------------------------------------------------------------------
- CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(8 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_3 <= ( CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) );
- CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_0 <= ( CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_1 <= ( CoreAPB3_0_APBmslave0_PADDR_1_7to0(7 downto 0) );
- CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(6 downto 0);
- CoreAPB3_0_APBmslave0_PADDR_4 <= ( CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(7 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_0 <= ( CoreAPB3_0_APBmslave0_PADDR_0_7to0(7 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(8 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_3 <= ( CoreAPB3_0_APBmslave0_PADDR_3_8to0(8 downto 0) );
  CoreAPB3_0_APBmslave0_PADDR_2_4to0(4 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(4 downto 0);
  CoreAPB3_0_APBmslave0_PADDR_2 <= ( CoreAPB3_0_APBmslave0_PADDR_2_4to0(4 downto 0) );
+ CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) <= CoreAPB3_0_APBmslave0_PADDR(6 downto 0);
+ CoreAPB3_0_APBmslave0_PADDR_4 <= ( CoreAPB3_0_APBmslave0_PADDR_4_6to0(6 downto 0) );
 
  CoreAPB3_0_APBmslave0_PRDATA_0_31to16(31 downto 16) <= B"0000000000000000";
  CoreAPB3_0_APBmslave0_PRDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PRDATA(15 downto 0);
  CoreAPB3_0_APBmslave0_PRDATA_0 <= ( CoreAPB3_0_APBmslave0_PRDATA_0_31to16(31 downto 16) & CoreAPB3_0_APBmslave0_PRDATA_0_15to0(15 downto 0) );
 
- CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
- CoreAPB3_0_APBmslave0_PWDATA_2 <= ( CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) );
  CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(15 downto 0);
  CoreAPB3_0_APBmslave0_PWDATA_0 <= ( CoreAPB3_0_APBmslave0_PWDATA_0_15to0(15 downto 0) );
+ CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
+ CoreAPB3_0_APBmslave0_PWDATA_2 <= ( CoreAPB3_0_APBmslave0_PWDATA_2_7to0(7 downto 0) );
  CoreAPB3_0_APBmslave0_PWDATA_1_7to0(7 downto 0) <= CoreAPB3_0_APBmslave0_PWDATA(7 downto 0);
  CoreAPB3_0_APBmslave0_PWDATA_1 <= ( CoreAPB3_0_APBmslave0_PWDATA_1_7to0(7 downto 0) );
 
@@ -883,7 +883,7 @@ CoreGPIO_0 : entity COREGPIO_LIB.CoreGPIO
         FIXED_CONFIG_0  => ( 0 ),
         FIXED_CONFIG_1  => ( 0 ),
         FIXED_CONFIG_2  => ( 0 ),
-        FIXED_CONFIG_3  => ( 1 ),
+        FIXED_CONFIG_3  => ( 0 ),
         FIXED_CONFIG_4  => ( 0 ),
         FIXED_CONFIG_5  => ( 0 ),
         FIXED_CONFIG_6  => ( 0 ),
@@ -945,7 +945,7 @@ CoreGPIO_0 : entity COREGPIO_LIB.CoreGPIO
         IO_INT_TYPE_29  => ( 7 ),
         IO_INT_TYPE_30  => ( 7 ),
         IO_INT_TYPE_31  => ( 7 ),
-        IO_NUM          => ( 3 ),
+        IO_NUM          => ( 12 ),
         IO_TYPE_0       => ( 0 ),
         IO_TYPE_1       => ( 0 ),
         IO_TYPE_2       => ( 0 ),
@@ -1028,7 +1028,7 @@ CoreGPIO_0 : entity COREGPIO_LIB.CoreGPIO
         INT_OR   => CoreGPIO_0_INT_OR,
         PRDATA   => CoreAPB3_0_APBmslave1_PRDATA,
         INT      => OPEN,
-        GPIO_OUT => GPIO_OUT_1,
+        GPIO_OUT => GPIO_OUT_1_0,
         GPIO_OE  => OPEN 
         );
 -- COREI2C_0   -   Actel:DirectCore:COREI2C:7.2.101
@@ -1163,7 +1163,7 @@ corepwm_0_0 : entity COREPWM_LIB.corepwm
         FIXED_PWM_POSEDGE14 => ( 0 ),
         FIXED_PWM_POSEDGE15 => ( 0 ),
         FIXED_PWM_POSEDGE16 => ( 0 ),
-        PWM_NUM             => ( 8 ),
+        PWM_NUM             => ( 3 ),
         PWM_STRETCH_VALUE1  => ( 0 ),
         PWM_STRETCH_VALUE2  => ( 0 ),
         PWM_STRETCH_VALUE3  => ( 0 ),
@@ -1232,7 +1232,7 @@ corepwm_0_0 : entity COREPWM_LIB.corepwm
         PSLVERR   => CoreAPB3_0_APBmslave0_PSLVERR,
         TACHINT   => OPEN,
         PRDATA    => CoreAPB3_0_APBmslave0_PRDATA,
-        PWM       => PWM_1 
+        PWM       => PWM_0_0 
         );
 -- CORERESETP_0   -   Actel:DirectCore:CoreResetP:7.1.100
 CORERESETP_0 : CoreResetP

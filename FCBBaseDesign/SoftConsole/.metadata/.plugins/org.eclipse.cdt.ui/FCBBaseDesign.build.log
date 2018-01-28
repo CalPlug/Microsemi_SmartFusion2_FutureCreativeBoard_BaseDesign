@@ -1,10 +1,5 @@
-16:07:54 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
+17:16:39 **** Incremental Build of configuration Debug for project FCBBaseDesign ****
 make all 
-Building file: ../src/MCP3909.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../drivers/CorePWM -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/MCP3909.d" -MT"src/MCP3909.o" -c -o "src/MCP3909.o" "../src/MCP3909.c"
-Finished building: ../src/MCP3909.c
- 
 Building file: ../main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../drivers/CorePWM -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
@@ -22,9 +17,9 @@ Finished building: FCBBaseDesign.hex
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "FCBBaseDesign.elf"
    text	   data	    bss	    dec	    hex	filename
-  25008	    512	  40016	  65536	  10000	FCBBaseDesign.elf
+  25184	    512	  39840	  65536	  10000	FCBBaseDesign.elf
 Finished building: FCBBaseDesign.siz
  
 
-16:07:57 Build Finished (took 3s.272ms)
+17:16:47 Build Finished (took 7s.883ms)
 
