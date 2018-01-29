@@ -43,15 +43,6 @@ gpio_instance_t g_gpio;
 
 #define COREI2C_BASE_ADDR         0x50003000UL  //0x30003000UL?
 i2c_instance_t g_core_I2C0;
-#define COREI2C_SER_ADDR   0x10u
-
-   i2c_instance_t g_i2c_inst;
-
-  // void system_init( void )
- //  {
- //      I2C_init( g_core_I2C0, COREI2C_BASE_ADDR, COREI2C_SER_ADDR,
- //                I2C_PCLK_DIV_256 );
- //  }
 
 /******************************************************************************
  * CoreUARTapb instance data.
