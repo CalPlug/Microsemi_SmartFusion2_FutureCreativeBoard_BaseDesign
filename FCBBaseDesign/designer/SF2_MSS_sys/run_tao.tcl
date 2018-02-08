@@ -1,6 +1,7 @@
 set_family {SmartFusion2}
 read_vhdl -mode vhdl_2008 {C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd}
+read_verilog -mode verilog_2k {C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\hdl\ExampleNOT.v}
 read_vhdl -mode vhdl_2008 {C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\component\work\SF2_MSS_sys_sb\IO_0\SF2_MSS_sys_sb_IO_0_IO.vhd}

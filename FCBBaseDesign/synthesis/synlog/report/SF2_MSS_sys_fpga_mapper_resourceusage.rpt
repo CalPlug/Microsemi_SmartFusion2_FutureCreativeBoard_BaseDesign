@@ -9,15 +9,15 @@ OR2             1 use
 OR3             2 uses
 RCOSC_25_50MHZ  1 use
 SYSRESET        1 use
-CFG1           7 uses
-CFG2           303 uses
-CFG3           453 uses
-CFG4           798 uses
+CFG1           8 uses
+CFG2           292 uses
+CFG3           438 uses
+CFG4           747 uses
 
 Carry cells:
 ARI1            202 uses - used for arithmetic functions
-ARI1            35 uses - used for Wide-Mux implementation
-Total ARI1      237 uses
+ARI1            98 uses - used for Wide-Mux implementation
+Total ARI1      300 uses
 
 
 Sequential Cells: 
@@ -25,17 +25,17 @@ SLE            970 uses
 
 DSP Blocks:    0 of 34 (0%)
 
-I/O ports: 53
-I/O primitives: 52
+I/O ports: 54
+I/O primitives: 53
 BIBUF          2 uses
 INBUF          18 uses
-OUTBUF         32 uses
+OUTBUF         33 uses
 
 
 Global Clock Buffers: 4 of 8 (50%)
 
 
-Total LUTs:    1798
+Total LUTs:    1785
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -44,5 +44,5 @@ RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
 Total number of SLEs after P&R:  970 + 324 + 0 + 0 = 1294;
-Total number of LUTs after P&R:  1798 + 324 + 0 + 0 = 2122;
+Total number of LUTs after P&R:  1785 + 324 + 0 + 0 = 2109;
 

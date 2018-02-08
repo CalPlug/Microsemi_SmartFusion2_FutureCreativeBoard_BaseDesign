@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sat Jan 27 17:12:50 2018
+-- Created by SmartDesign Thu Feb 08 09:18:21 2018
 -- Version: v11.8 SP2 11.8.2.4
 ----------------------------------------------------------------------
 
@@ -30,6 +30,7 @@ entity SF2_MSS_sys is
         ADC_CLK          : out   std_logic;
         ADC_RST          : out   std_logic;
         GPIO_OUT         : out   std_logic_vector(11 downto 0);
+        MONITOR_MISO     : out   std_logic;
         PWM              : out   std_logic_vector(2 downto 0);
         SPISCLK0         : out   std_logic;
         SPISCLK1         : out   std_logic;
@@ -79,6 +80,7 @@ component SF2_MSS_sys_sb
         FAB_CCC_LOCK     : out   std_logic;
         GPIO_OUT         : out   std_logic_vector(11 downto 0);
         INIT_DONE        : out   std_logic;
+        MONITOR_MISO     : out   std_logic;
         MSS_READY        : out   std_logic;
         POWER_ON_RESET_N : out   std_logic;
         PWM              : out   std_logic_vector(2 downto 0);
@@ -108,6 +110,7 @@ end component;
 signal ADC_CLK_net_0          : std_logic;
 signal ADC_RST_0              : std_logic;
 signal GPIO_OUT_2             : std_logic_vector(11 downto 0);
+signal MONITOR_MISO_net_0     : std_logic;
 signal PWM_3                  : std_logic_vector(2 downto 0);
 signal SPI_0_CLK_M2F_net_0    : std_logic;
 signal SPI_0_DO_M2F_net_0     : std_logic;
@@ -143,6 +146,7 @@ signal ADC_CLK_net_1          : std_logic;
 signal ADC_RST_0_net_0        : std_logic;
 signal PWM_3_net_0            : std_logic_vector(2 downto 0);
 signal GPIO_OUT_2_net_0       : std_logic_vector(11 downto 0);
+signal MONITOR_MISO_net_1     : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
@@ -194,6 +198,8 @@ begin
  PWM(2 downto 0)        <= PWM_3_net_0;
  GPIO_OUT_2_net_0       <= GPIO_OUT_2;
  GPIO_OUT(11 downto 0)  <= GPIO_OUT_2_net_0;
+ MONITOR_MISO_net_1     <= MONITOR_MISO_net_0;
+ MONITOR_MISO           <= MONITOR_MISO_net_1;
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
@@ -235,6 +241,7 @@ SF2_MSS_sys_sb_0 : SF2_MSS_sys_sb
         ADC_RST          => ADC_RST_0,
         PWM              => PWM_3,
         GPIO_OUT         => GPIO_OUT_2,
+        MONITOR_MISO     => MONITOR_MISO_net_0,
         -- Inouts
         SCL              => SCL,
         SDA              => SDA 

@@ -110,6 +110,11 @@ set_io TX              \
     -OUT_DRIVE 16      \
     -DIRECTION OUTPUT
 
+set_io MONITOR_MISO             \
+    -pinname R9       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -DIRECTION INPUT
 
 set_io {SCL[0]}          \
     -pinname T7        \

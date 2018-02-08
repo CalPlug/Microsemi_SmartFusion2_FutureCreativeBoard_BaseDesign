@@ -1,12 +1,13 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
 #--  Project file C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\synthesis\run_options.txt
-#--  Written on Sat Jan 27 17:13:29 2018
+#--  Written on Thu Feb 08 09:21:07 2018
 
 
 #project files
 add_file -vhdl -lib work "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd"
 add_file -vhdl -lib work "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp.vhd"
+add_file -verilog "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/hdl/ExampleNOT.v"
 add_file -vhdl -lib work "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/component/work/SF2_MSS_sys_sb/CCC_0/SF2_MSS_sys_sb_CCC_0_FCCC.vhd"
 add_file -vhdl -lib work "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
 add_file -vhdl -lib work "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign/FCBBaseDesign/component/work/SF2_MSS_sys_sb/FABOSC_0/SF2_MSS_sys_sb_FABOSC_0_OSC.vhd"
@@ -54,6 +55,11 @@ add_file -fpga_constraint "C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_Smar
 
 #implementation: "synthesis"
 impl -add synthesis -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
 
 #device options
 set_option -technology SmartFusion2

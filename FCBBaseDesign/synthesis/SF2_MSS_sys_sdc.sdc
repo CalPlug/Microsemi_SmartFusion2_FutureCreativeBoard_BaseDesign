@@ -1,10 +1,10 @@
-# Written by Synplify Pro version map201609actrcp1, Build 005R. Synopsys Run ID: sid1517102020 
+# Written by Synplify Pro version map201609actrcp1, Build 005R. Synopsys Run ID: sid1518110481 
 # Top Level Design Parameters 
 
 # Clocks 
 create_clock -period 20.000 -waveform {0.000 10.000} -name {SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT} [get_pins {SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT}] 
 create_clock -period 10.000 -waveform {0.000 5.000} -name {SF2_MSS_sys|SPI_0_CLK_F2M} [get_ports {SPI_0_CLK_F2M}] 
-create_clock -period 10.000 -waveform {0.000 5.000} -name {spi_chanctrl|un1_resetn_rx_inferred_clock} [get_pins {SF2_MSS_sys_sb_0/CORESPI_0/USPI/UCC/un1_resetn_rx:Y}] 
+create_clock -period 10.000 -waveform {0.000 5.000} -name {spi_chanctrl_work_sf2_mss_sys_rtl_0layer0|un1_resetn_rx_inferred_clock} [get_pins {SF2_MSS_sys_sb_0/CORESPI_0/USPI/UCC/un1_resetn_rx:Y}] 
 
 # Virtual Clocks 
 
@@ -38,7 +38,7 @@ create_generated_clock -name {SF2_MSS_sys_sb_0/CCC_0/GL1} -multiply_by {7} -divi
 
 # Clock Delay Constraints 
 set_clock_groups -asynchronous -group [get_clocks {SF2_MSS_sys|SPI_0_CLK_F2M}]
-set_clock_groups -asynchronous -group [get_clocks {spi_chanctrl|un1_resetn_rx_inferred_clock}]
+set_clock_groups -asynchronous -group [get_clocks {spi_chanctrl_work_sf2_mss_sys_rtl_0layer0|un1_resetn_rx_inferred_clock}]
 
 # syn_mode Attributes 
 

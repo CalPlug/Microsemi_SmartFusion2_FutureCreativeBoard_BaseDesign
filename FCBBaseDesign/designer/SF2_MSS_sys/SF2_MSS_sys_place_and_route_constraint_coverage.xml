@@ -3,7 +3,7 @@
 <doc>
 <text>SmartTime Version 11.8.2.4</text>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
-Date: Sat Jan 27 17:21:39 2018 </text>
+Date: Thu Feb 08 09:26:48 2018 </text>
 <table>
 <header>
 </header>
@@ -63,14 +63,14 @@ Date: Sat Jan 27 17:21:39 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           37</cell>
- <cell>           37</cell>
+ <cell>           39</cell>
+ <cell>           39</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>         2621</cell>
- <cell>           59</cell>
- <cell>         2680</cell>
+ <cell>           61</cell>
+ <cell>         2682</cell>
 </row>
 <separator/>
 <row>
@@ -88,14 +88,14 @@ Date: Sat Jan 27 17:21:39 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           37</cell>
- <cell>           37</cell>
+ <cell>           39</cell>
+ <cell>           39</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>         2621</cell>
- <cell>           59</cell>
- <cell>         2680</cell>
+ <cell>           61</cell>
+ <cell>         2682</cell>
 </row>
 </table>
 <section>
@@ -605,14 +605,14 @@ Date: Sat Jan 27 17:21:39 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            9</cell>
- <cell>            9</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>            0</cell>
- <cell>           10</cell>
- <cell>           10</cell>
+ <cell>           11</cell>
+ <cell>           11</cell>
 </row>
 <separator/>
 <row>
@@ -630,14 +630,14 @@ Date: Sat Jan 27 17:21:39 2018 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            9</cell>
- <cell>            9</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>            0</cell>
- <cell>           10</cell>
- <cell>           10</cell>
+ <cell>           11</cell>
+ <cell>           11</cell>
 </row>
 </table>
 <section>
@@ -672,17 +672,49 @@ Date: Sat Jan 27 17:21:39 2018 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            1</cell>
+ <cell>            1</cell>
 </row>
 <separator/>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            1</cell>
+ <cell>            1</cell>
 </row>
 </table>
+<section>
+<name>Enhancement Suggestions</name>
+<text></text>
+<text> - Max delay constraint missing on  inputports:</text>
+<text>   </text>
+<list>
+ <item>SPISDI0</item>
+ <item>SPISDI1</item>
+</list>
+<text></text>
+<text> - Min delay constraint missing on  inputports:</text>
+<text>   </text>
+<list>
+ <item>SPISDI0</item>
+ <item>SPISDI1</item>
+</list>
+<text></text>
+<text></text>
+<text> - Max delay constraint missing on  outputport:</text>
+<text>   </text>
+<list>
+ <item>MONITOR_MISO</item>
+</list>
+<text></text>
+<text> - Min delay constraint missing on  outputport:</text>
+<text>   </text>
+<list>
+ <item>MONITOR_MISO</item>
+</list>
+<text></text>
+<text></text>
+</section>
 </section>
 </section>
 </doc>

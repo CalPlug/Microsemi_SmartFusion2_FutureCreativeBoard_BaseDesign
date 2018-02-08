@@ -55,6 +55,24 @@ fsm_state_encoding {202242822422} fsmdet6 {1000000}
 
 fsm_registers {202242822422} {fsmdet[0]}  {fsmdet[1]}  {fsmdet[2]}  {fsmdet[3]}  {fsmdet[4]}  {fsmdet[5]}  {fsmdet[6]} 
 
+fsm_encoding {391059810598} onehot
+
+fsm_state_encoding {391059810598} s0 {0000001}
+
+fsm_state_encoding {391059810598} s1 {0000010}
+
+fsm_state_encoding {391059810598} s2 {0000100}
+
+fsm_state_encoding {391059810598} s3 {0001000}
+
+fsm_state_encoding {391059810598} s4 {0010000}
+
+fsm_state_encoding {391059810598} s5 {0100000}
+
+fsm_state_encoding {391059810598} s6 {1000000}
+
+fsm_registers {391059810598} {sm0_state[0]}  {sm0_state[1]}  {sm0_state[2]}  {sm0_state[3]}  {sm0_state[4]}  {sm0_state[5]}  {sm0_state[6]} 
+
 fsm_encoding {4637183719} onehot
 
 fsm_state_encoding {4637183719} mtx_idle1 {000001}

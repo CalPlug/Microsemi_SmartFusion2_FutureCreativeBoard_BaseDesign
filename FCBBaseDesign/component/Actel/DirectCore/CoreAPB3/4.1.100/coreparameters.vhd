@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Sat Jan 27 17:12:06 2018
+-- Created by Microsemi SmartDesign Thu Feb 08 09:15:12 2018
 -- Parameters for CoreAPB3
 ----------------------------------------------------------------------
 
